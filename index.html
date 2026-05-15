@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Spare Parts Catalogue — Marine Cookers · Techimpex</title>
+<meta name="description" content="Spare parts catalogue for Techimpex Marine Cookers — burners, thermocouples, gas valves, grids and original components since 1974.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://static.wixstatic.com">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@200;300;400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@200;300;400;500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@200;300;400;500;600&display=swap"></noscript>
+
+<style>
+:root{--bl:#0a0a0a;--wh:#f8f6f1;--go:#b8965a;--gl:#d4b07a;--hh:72px}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bl);color:var(--wh)}
+body{font-family:"Outfit",sans-serif;font-weight:300;overflow-x:hidden;min-height:100vh;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+
+/* ===== CUSTOM CURSOR (desktop only) ===== */
+@media(hover:hover) and (pointer:fine){
+  body{cursor:none}
+  #pg-cursor{position:fixed;top:0;left:0;width:14px;height:14px;border:1px solid var(--go);border-radius:50%;pointer-events:none;z-index:9999;transition:transform .2s ease,width .25s,height .25s,background .25s,border-color .25s;mix-blend-mode:difference;transform:translate(-50%,-50%)}
+  #pg-cursor.hov{width:36px;height:36px;background:rgba(184,150,90,.18);border-color:var(--gl)}
+  a,button,input,.fl-btn,.item-card,.ph-ind,.ph-link,.cp-btn{cursor:none}
+}
+@media(hover:none),(pointer:coarse){
+  #pg-cursor{display:none!important}
+}
+
+/* ===== HEADER ===== */
+header{position:fixed;top:0;left:0;right:0;height:var(--hh);z-index:800;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(20px,4vw,56px);background:rgba(10,10,10,.94);backdrop-filter:saturate(140%) blur(14px);-webkit-backdrop-filter:saturate(140%) blur(14px);border-bottom:1px solid rgba(184,150,90,.14);transition:background .4s,border-color .4s}
+.logo{display:flex;flex-direction:column;text-decoration:none;color:var(--wh);line-height:1}
+.logo-main{font-family:"Cormorant Garamond",serif;font-size:22px;font-weight:400;letter-spacing:.02em}
+.logo-sub{font-size:8px;font-weight:300;letter-spacing:.4em;text-transform:uppercase;color:rgba(184,150,90,.7);margin-top:4px;font-family:"Outfit",sans-serif}
+.back-link{display:inline-flex;align-items:center;gap:10px;font-size:10px;font-weight:300;letter-spacing:.3em;text-transform:uppercase;color:rgba(248,246,241,.55);text-decoration:none;font-family:"Outfit",sans-serif;transition:color .3s,gap .3s}
+.back-link:hover{color:var(--go);gap:14px}
+.back-link .arrow{display:inline-block;width:18px;height:1px;background:currentColor;position:relative;transition:width .3s}
+.back-link .arrow::before{content:'';position:absolute;left:0;top:-3px;width:6px;height:1px;background:currentColor;transform:rotate(-45deg);transform-origin:left center}
+.back-link .arrow::after{content:'';position:absolute;left:0;top:3px;width:6px;height:1px;background:currentColor;transform:rotate(45deg);transform-origin:left center}
+.back-link:hover .arrow{width:24px}
+
+/* ===== HERO EDITORIAL ===== */
+.hero{padding:calc(var(--hh) + clamp(60px,9vw,120px)) clamp(20px,5vw,80px) clamp(50px,7vw,90px);max-width:1480px;margin:0 auto;border-bottom:1px solid rgba(184,150,90,.10)}
+.hero-tag{font-size:10px;font-weight:300;letter-spacing:.4em;text-transform:uppercase;color:rgba(184,150,90,.7);margin-bottom:36px;display:flex;align-items:center;gap:14px}
+.hero-tag::before{content:'';display:inline-block;width:32px;height:1px;background:rgba(184,150,90,.5)}
+.hero-title{font-family:"Cormorant Garamond",serif;font-weight:300;font-size:clamp(46px,7vw,96px);line-height:1;letter-spacing:-.02em;margin-bottom:30px;max-width:14ch}
+.hero-title em{font-style:italic;color:var(--go);font-weight:400}
+.hero-sub{font-size:15px;font-weight:300;line-height:1.85;color:rgba(248,246,241,.62);max-width:62ch;margin-bottom:50px;letter-spacing:.01em}
+.hero-meta{display:flex;flex-wrap:wrap;gap:clamp(28px,5vw,72px);padding-top:36px;border-top:1px solid rgba(184,150,90,.10)}
+.meta-item{display:flex;flex-direction:column;gap:6px}
+.meta-num{font-family:"Cormorant Garamond",serif;font-size:32px;font-weight:300;color:var(--wh);line-height:1}
+.meta-num em{font-style:italic;color:var(--go)}
+.meta-lbl{font-size:9px;font-weight:300;letter-spacing:.32em;text-transform:uppercase;color:rgba(248,246,241,.45);font-family:"Outfit",sans-serif}
+
+/* ===== INTRO NOTE ===== */
+.intro-note{max-width:1480px;margin:0 auto;padding:clamp(34px,5vw,56px) clamp(20px,5vw,80px) clamp(20px,3vw,30px);display:grid;grid-template-columns:1fr 2fr;gap:clamp(30px,5vw,80px);align-items:start}
+@media(max-width:840px){.intro-note{grid-template-columns:1fr;gap:20px}}
+.intro-note .nt-label{font-size:10px;font-weight:300;letter-spacing:.4em;text-transform:uppercase;color:rgba(184,150,90,.7);padding-top:8px}
+.intro-note .nt-body{font-size:14px;font-weight:300;line-height:1.95;color:rgba(248,246,241,.62);letter-spacing:.01em}
+.intro-note .nt-body strong{color:var(--gl);font-weight:400;letter-spacing:.02em}
+.intro-note .nt-body em{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--wh);font-size:1.05em}
+
+/* ===== FILTER BAR ===== */
+.toolbar{max-width:1480px;margin:0 auto;padding:clamp(30px,4vw,50px) clamp(20px,5vw,80px) clamp(20px,3vw,30px);display:flex;flex-wrap:wrap;align-items:center;gap:24px;border-bottom:1px solid rgba(184,150,90,.10)}
+.toolbar.sticky{position:sticky;top:var(--hh);background:rgba(10,10,10,.96);backdrop-filter:saturate(140%) blur(14px);-webkit-backdrop-filter:saturate(140%) blur(14px);z-index:700;padding-top:22px;padding-bottom:22px;margin-top:0}
+.fl-list{display:flex;flex-wrap:wrap;gap:4px 6px;flex:1;min-width:0}
+.fl-btn{background:none;border:none;color:rgba(248,246,241,.5);font-family:"Outfit",sans-serif;font-size:10px;font-weight:300;letter-spacing:.28em;text-transform:uppercase;padding:8px 14px;cursor:pointer;position:relative;transition:color .3s}
+.fl-btn::after{content:'';position:absolute;left:14px;right:14px;bottom:4px;height:1px;background:var(--go);transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.23,1,.32,1)}
+.fl-btn:hover{color:rgba(248,246,241,.8)}
+.fl-btn.active{color:var(--gl)}
+.fl-btn.active::after{transform:scaleX(1)}
+.search-wrap{display:flex;align-items:center;gap:10px;border-bottom:1px solid rgba(184,150,90,.25);padding:6px 0;min-width:200px;transition:border-color .3s}
+.search-wrap:focus-within{border-color:var(--go)}
+.search-wrap svg{width:14px;height:14px;stroke:rgba(184,150,90,.6);flex-shrink:0}
+.search-wrap input{background:none;border:none;outline:none;color:var(--wh);font-family:"Outfit",sans-serif;font-size:12px;font-weight:300;letter-spacing:.08em;width:180px;padding:2px 0}
+.search-wrap input::placeholder{color:rgba(248,246,241,.32);font-style:italic;letter-spacing:.04em}
+
+/* ===== CATALOG SECTIONS ===== */
+.catalog{max-width:1480px;margin:0 auto;padding:clamp(30px,4vw,50px) clamp(20px,5vw,80px) clamp(60px,8vw,120px)}
+.cat-section{margin-bottom:clamp(60px,7vw,110px)}
+.cat-section:last-child{margin-bottom:0}
+.cat-head{display:flex;align-items:baseline;gap:clamp(16px,2vw,28px);padding-bottom:24px;margin-bottom:38px;border-bottom:1px solid rgba(184,150,90,.14)}
+.cat-num{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:18px;font-weight:400;color:rgba(184,150,90,.55);flex-shrink:0;min-width:32px}
+.cat-title{font-family:"Cormorant Garamond",serif;font-weight:300;font-size:clamp(28px,3.4vw,44px);letter-spacing:-.01em;color:var(--wh);line-height:1.1;flex:1}
+.cat-count{font-size:10px;font-weight:300;letter-spacing:.3em;text-transform:uppercase;color:rgba(248,246,241,.4);font-family:"Outfit",sans-serif;flex-shrink:0}
+
+/* ===== CARD GRID ===== */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1px;background:rgba(184,150,90,.08)}
+.item-card{background:#0c0c0c;padding:24px 26px;display:flex;gap:18px;align-items:flex-start;transition:background .35s,transform .35s}
+.item-card:hover{background:#101010}
+.item-card.has-photo:hover{background:linear-gradient(135deg,#101010,#0d0d0d)}
+
+.ph-ind{flex-shrink:0;width:54px;height:54px;border:1px solid rgba(184,150,90,.3);display:flex;align-items:center;justify-content:center;text-decoration:none;color:rgba(184,150,90,.8);transition:border-color .35s,color .35s,background .35s;background:rgba(184,150,90,.03)}
+.ph-ind span{font-size:8px;font-weight:400;letter-spacing:.25em;color:inherit;font-family:"Outfit",sans-serif}
+.ph-ind:hover{border-color:var(--gl);color:var(--gl);background:rgba(184,150,90,.08)}
+.ph-ind.no-ph{border:1px dashed rgba(248,246,241,.1);background:none;color:rgba(248,246,241,.18)}
+.ph-ind.no-ph span{font-size:14px;letter-spacing:0}
+
+.it-content{flex:1;min-width:0}
+.it-ref{font-family:"Outfit",sans-serif;font-size:10px;font-weight:400;letter-spacing:.22em;color:var(--go);text-transform:uppercase;margin-bottom:8px;word-break:break-word}
+.item-card.has-photo .it-ref{color:var(--gl)}
+.it-desc{font-size:13px;font-weight:300;line-height:1.55;color:rgba(248,246,241,.85);margin-bottom:6px;letter-spacing:.01em}
+.it-size{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:13px;color:rgba(184,150,90,.6);margin-bottom:4px}
+
+.card-actions{display:flex;align-items:center;gap:14px;margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.04)}
+.ph-link{font-family:"Outfit",sans-serif;font-size:9px;font-weight:400;letter-spacing:.28em;text-transform:uppercase;color:rgba(184,150,90,.85);text-decoration:none;padding-bottom:3px;border-bottom:1px solid rgba(184,150,90,.35);transition:color .3s,border-color .3s,letter-spacing .3s}
+.ph-link:hover{color:var(--gl);border-color:var(--gl);letter-spacing:.32em}
+.cp-btn{font-family:"Outfit",sans-serif;font-size:9px;font-weight:400;letter-spacing:.28em;text-transform:uppercase;color:rgba(248,246,241,.45);background:none;border:none;padding:0;cursor:pointer;transition:color .3s}
+.cp-btn:hover{color:rgba(248,246,241,.85)}
+.cp-btn.copied{color:var(--go)}
+.no-img-note{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:12px;color:rgba(248,246,241,.32)}
+
+.hidden{display:none!important}
+
+/* ===== EMPTY STATE ===== */
+.empty-state{text-align:center;padding:80px 20px;color:rgba(248,246,241,.4);font-family:"Cormorant Garamond",serif;font-style:italic;font-size:18px}
+
+/* ===== FOOTER ===== */
+.foot{padding:clamp(40px,5vw,70px) clamp(20px,5vw,80px) clamp(50px,6vw,80px);border-top:1px solid rgba(184,150,90,.12);max-width:1480px;margin:0 auto}
+.foot-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,80px);align-items:end}
+@media(max-width:680px){.foot-grid{grid-template-columns:1fr;align-items:start;gap:24px}}
+.foot-brand{font-family:"Cormorant Garamond",serif;font-size:clamp(24px,3vw,36px);font-weight:300;color:var(--wh);line-height:1.1;margin-bottom:10px}
+.foot-brand em{font-style:italic;color:var(--go)}
+.foot-addr{font-size:12px;font-weight:300;line-height:1.85;color:rgba(248,246,241,.5);letter-spacing:.02em}
+.foot-addr a{color:rgba(184,150,90,.85);text-decoration:none;border-bottom:1px solid rgba(184,150,90,.2);transition:color .3s,border-color .3s}
+.foot-addr a:hover{color:var(--gl);border-color:var(--gl)}
+.foot-since{text-align:right;display:flex;flex-direction:column;gap:4px}
+@media(max-width:680px){.foot-since{text-align:left}}
+.foot-since .yr{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:42px;color:var(--go);font-weight:300;line-height:1}
+.foot-since .lbl{font-size:9px;font-weight:300;letter-spacing:.35em;text-transform:uppercase;color:rgba(248,246,241,.45)}
+
+/* ===== TOAST ===== */
+.toast{position:fixed;bottom:32px;left:50%;transform:translateX(-50%) translateY(20px);background:rgba(10,10,10,.96);border:1px solid var(--go);color:var(--gl);padding:14px 28px;font-family:"Outfit",sans-serif;font-size:10px;font-weight:400;letter-spacing:.3em;text-transform:uppercase;z-index:9000;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;backdrop-filter:blur(8px)}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:680px){
+  :root{--hh:64px}
+  .hero-tag{margin-bottom:24px}
+  .hero-meta{gap:24px}
+  .meta-num{font-size:26px}
+  .toolbar{padding-top:24px;padding-bottom:24px;gap:16px;flex-direction:column;align-items:flex-start}
+  .toolbar.sticky{position:relative;top:0}
+  .fl-list{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;-webkit-overflow-scrolling:touch}
+  .fl-list::-webkit-scrollbar{display:none}
+  .fl-btn{flex-shrink:0;padding:6px 10px;font-size:9px}
+  .search-wrap{width:100%;min-width:0}
+  .search-wrap input{width:100%}
+  .cat-grid{grid-template-columns:1fr}
+  .cat-head{flex-wrap:wrap;gap:12px}
+  .cat-title{flex-basis:100%;order:2}
+  .cat-num{order:1}
+  .cat-count{order:1;margin-left:auto}
+  .item-card{padding:20px 18px;gap:14px}
+  .ph-ind{width:46px;height:46px}
+  .it-desc{font-size:12px}
+  .card-actions{flex-wrap:wrap;gap:10px 14px}
+  .logo-main{font-size:18px}
+  .logo-sub{font-size:7px}
+  .back-link{font-size:9px}
+}
+
+@media(max-width:420px){
+  .hero-title{font-size:42px}
+  .hero-sub{font-size:13px}
+}
+</style>
+</head>
+<body>
+
+<div id="pg-cursor"></div>
+
+<header>
+  <a href="https://www.techimpex.tv" class="logo" aria-label="Back to Marine Cookers home">
+    <span class="logo-main">Marine Cookers</span>
+    <span class="logo-sub">Techimpex · Since 1974</span>
+  </a>
+  <a href="https://techimpex.tv/spareparts" class="back-link"><span class="arrow"></span><span>Return to site</span></a>
+</header>
+
+<section class="hero">
+  <div class="hero-tag"><span>05 — Service</span></div>
+  <h1 class="hero-title">Spare parts, <em>kept original.</em></h1>
+  <p class="hero-sub">A complete reference of authentic Techimpex components — burners, thermocouples, gas valves, grids and ignition assemblies — engineered, kept in stock and shipped from Conegliano. Every part is original equipment, designed to preserve the longevity and certification of the appliance it serves.</p>
+  <div class="hero-meta">
+    <div class="meta-item">
+      <span class="meta-num">95</span>
+      <span class="meta-lbl">References</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-num">11</span>
+      <span class="meta-lbl">Categories</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-num"><em>94</em></span>
+      <span class="meta-lbl">With image</span>
+    </div>
+  </div>
+</section>
+
+<aside class="intro-note">
+  <div class="nt-label">How to order</div>
+  <div class="nt-body">Identify the part you need by browsing or searching the catalogue below. Each entry includes a reference code and, where available, an <em>original photograph</em> of the component. To place a request, write to <strong>info@marinecookers.com</strong> quoting the reference code, the photograph (or its link) and the model of your cooker. Our office will reply with availability, lead time and shipping arrangements.</div>
+</aside>
+
+<div class="toolbar">
+  <div class="fl-list">
+    <button class="fl-btn active" onclick="filterAll(this)" data-fl="all">All</button>
+    <button class="fl-btn" onclick="filterPhoto(this)" data-fl="photo">With Image</button>
+    <button class="fl-btn" onclick="filterCategory(this, 'Burners and burner parts')" data-fl="cat">Burners</button>
+    <button class="fl-btn" onclick="filterCategory(this, 'Thermocouples')" data-fl="cat">Thermocouples</button>
+    <button class="fl-btn" onclick="filterCategory(this, 'Ignition cables and electronic ignition parts')" data-fl="cat">Ignition</button>
+    <button class="fl-btn" onclick="filterCategory(this, 'Gas valves and gas valve parts')" data-fl="cat">Gas Valves</button>
+    <button class="fl-btn" onclick="filterCategory(this, 'Grids')" data-fl="cat">Grids</button>
+    <button class="fl-btn" onclick="filterCategory(this, 'Oven and grill trays')" data-fl="cat">Oven &amp; Trays</button>
+    <button class="fl-btn" onclick="filterCategory(this, 'Door window parts')" data-fl="cat">Door &amp; Window</button>
+    <button class="fl-btn" onclick="filterCategory(this, 'Panholders')" data-fl="cat">Panholders</button>
+    <button class="fl-btn" onclick="filterCategory(this, 'Control knobs')" data-fl="cat">Control Knobs</button>
+    <button class="fl-btn" onclick="filterCategory(this, 'Hob heat shields')" data-fl="cat">Heat Shields</button>
+    <button class="fl-btn" onclick="filterCategory(this, 'Other parts')" data-fl="cat">Other</button>
+  </div>
+  <div class="search-wrap">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input type="text" placeholder="Search reference or description…" oninput="filterSearch(this.value)" aria-label="Search spare parts">
+  </div>
+</div>
+
+<main class="catalog" id="catalog">
+  <section class="cat-section" data-category="Burners and burner parts">
+    <div class="cat-head">
+      <span class="cat-num">I</span>
+      <h2 class="cat-title">Burners & Burner Parts</h2>
+      <span class="cat-count">38 items</span>
+    </div>
+    <div class="cat-grid">
+      <article class="item-card has-photo" data-ref="bfct00002008" data-desc="oven burner (new type) for cookers xl, mariner complete with thermocouple and ignition cable">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_367ffb6129294d6e9b503ae1a9c3d768~mv2_d_2976_3968_s_4_2.jpg/v1/fill/w_698,h_931,al_c,q_85,usm_0.66_1.00_0.01/d671d9_367ffb6129294d6e9b503ae1a9c3d768~mv2_d_2976_3968_s_4_2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BFCT00002008</div>
+          <div class="it-desc">Oven Burner (New Type) for cookers XL, MARINER complete with thermocouple and ignition cable</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_367ffb6129294d6e9b503ae1a9c3d768~mv2_d_2976_3968_s_4_2.jpg/v1/fill/w_698,h_931,al_c,q_85,usm_0.66_1.00_0.01/d671d9_367ffb6129294d6e9b503ae1a9c3d768~mv2_d_2976_3968_s_4_2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_367ffb6129294d6e9b503ae1a9c3d768~mv2_d_2976_3968_s_4_2.jpg/v1/fill/w_698,h_931,al_c,q_85,usm_0.66_1.00_0.01/d671d9_367ffb6129294d6e9b503ae1a9c3d768~mv2_d_2976_3968_s_4_2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="brcgl00np118" data-desc="oven burner for cookers mastergrill / classic (92 vers 96)">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_22305d07c4a34ab7a7b78d949bbca9ba~mv2_d_4128_2322_s_2.jpg/v1/fill/w_298,h_149,al_c,q_80,usm_0.66_1.00_0.01/d671d9_22305d07c4a34ab7a7b78d949bbca9ba~mv2_d_4128_2322_s_2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BRCGL00NP118</div>
+          <div class="it-desc">Oven Burner For Cookers Mastergrill / Classic (92 Vers 96)</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_22305d07c4a34ab7a7b78d949bbca9ba~mv2_d_4128_2322_s_2.jpg/v1/fill/w_298,h_149,al_c,q_80,usm_0.66_1.00_0.01/d671d9_22305d07c4a34ab7a7b78d949bbca9ba~mv2_d_4128_2322_s_2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_22305d07c4a34ab7a7b78d949bbca9ba~mv2_d_4128_2322_s_2.jpg/v1/fill/w_298,h_149,al_c,q_80,usm_0.66_1.00_0.01/d671d9_22305d07c4a34ab7a7b78d949bbca9ba~mv2_d_4128_2322_s_2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="bpspgro00l00 + vma204507688" data-desc="brass large size flame spreader with screw for burner xl, classic, mastergrill">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_038de08158c94ec4815eab328945ee58~mv2.jpg/v1/fill/w_380,h_619,al_c,q_80,usm_0.66_1.00_0.01/d671d9_038de08158c94ec4815eab328945ee58~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BPSPGRO00L00 + VMA204507688</div>
+          <div class="it-desc">Brass Large Size Flame Spreader with screw for burner XL, CLASSIC, MASTERGRILL</div>
+          <div class="it-size">Diam 72</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_038de08158c94ec4815eab328945ee58~mv2.jpg/v1/fill/w_380,h_619,al_c,q_80,usm_0.66_1.00_0.01/d671d9_038de08158c94ec4815eab328945ee58~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_038de08158c94ec4815eab328945ee58~mv2.jpg/v1/fill/w_380,h_619,al_c,q_80,usm_0.66_1.00_0.01/d671d9_038de08158c94ec4815eab328945ee58~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="bpspmeo00l00 + vma204507688" data-desc="brass medium size flame spreader with screw for burner xl, classic, mastergrill">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_fc52fb7c66be49929940332ce3fe6be1~mv2.jpg/v1/fill/w_320,h_568,al_c,q_80,usm_0.66_1.00_0.01/d671d9_fc52fb7c66be49929940332ce3fe6be1~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BPSPMEO00L00 + VMA204507688</div>
+          <div class="it-desc">Brass Medium Size Flame Spreader with screw for burner XL, CLASSIC, MASTERGRILL</div>
+          <div class="it-size">Diam 52</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_fc52fb7c66be49929940332ce3fe6be1~mv2.jpg/v1/fill/w_320,h_568,al_c,q_80,usm_0.66_1.00_0.01/d671d9_fc52fb7c66be49929940332ce3fe6be1~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_fc52fb7c66be49929940332ce3fe6be1~mv2.jpg/v1/fill/w_320,h_568,al_c,q_80,usm_0.66_1.00_0.01/d671d9_fc52fb7c66be49929940332ce3fe6be1~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="bpsppio00l00 + vma204507688" data-desc="brass small size flame spreader with screw for burner xl, classic, mastergrill">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_476f7d218c864733a2fb9401c06eb6d9~mv2.jpg/v1/fill/w_320,h_568,al_c,q_80,usm_0.66_1.00_0.01/d671d9_476f7d218c864733a2fb9401c06eb6d9~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BPSPPIO00L00 + VMA204507688</div>
+          <div class="it-desc">Brass Small Size Flame Spreader with screw for burner XL, CLASSIC, MASTERGRILL</div>
+          <div class="it-size">Diam 42</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_476f7d218c864733a2fb9401c06eb6d9~mv2.jpg/v1/fill/w_320,h_568,al_c,q_80,usm_0.66_1.00_0.01/d671d9_476f7d218c864733a2fb9401c06eb6d9~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_476f7d218c864733a2fb9401c06eb6d9~mv2.jpg/v1/fill/w_320,h_568,al_c,q_80,usm_0.66_1.00_0.01/d671d9_476f7d218c864733a2fb9401c06eb6d9~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="bpfigrbspr00" data-desc="complete burner large size for xl2 (brass cap)">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_5102d73ce01542bc88d4f23ba0d5854a~mv2.jpg/v1/fill/w_614,h_389,al_c,q_80,usm_0.66_1.00_0.01/d671d9_5102d73ce01542bc88d4f23ba0d5854a~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BPFIGRBSPR00</div>
+          <div class="it-desc">Complete Burner Large Size for XL2 (brass cap)</div>
+          <div class="it-size">165 (from axis burner srew to gas entrance)</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_5102d73ce01542bc88d4f23ba0d5854a~mv2.jpg/v1/fill/w_614,h_389,al_c,q_80,usm_0.66_1.00_0.01/d671d9_5102d73ce01542bc88d4f23ba0d5854a~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_5102d73ce01542bc88d4f23ba0d5854a~mv2.jpg/v1/fill/w_614,h_389,al_c,q_80,usm_0.66_1.00_0.01/d671d9_5102d73ce01542bc88d4f23ba0d5854a~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="bpfimebspr00" data-desc="complete burner medium size for xl2  (brass cap)">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_a20d22efa6d742e3bf33083f7329fabd~mv2.jpg/v1/fill/w_614,h_346,al_c,q_80,usm_0.66_1.00_0.01/d671d9_a20d22efa6d742e3bf33083f7329fabd~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BPFIMEBSPR00</div>
+          <div class="it-desc">Complete Burner Medium Size for XL2  (brass cap)</div>
+          <div class="it-size">165 (from axis burner srew to gas entrance)</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_a20d22efa6d742e3bf33083f7329fabd~mv2.jpg/v1/fill/w_614,h_346,al_c,q_80,usm_0.66_1.00_0.01/d671d9_a20d22efa6d742e3bf33083f7329fabd~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_a20d22efa6d742e3bf33083f7329fabd~mv2.jpg/v1/fill/w_614,h_346,al_c,q_80,usm_0.66_1.00_0.01/d671d9_a20d22efa6d742e3bf33083f7329fabd~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="bpfigrbs9200" data-desc="complete burner large size for mastergrill, classic  (brass cap)">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_cd6d7620b71e4522ab98b6cbae25732d~mv2.jpg_1024" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BPFIGRBS9200</div>
+          <div class="it-desc">Complete Burner Large Size for MASTERGRILL, CLASSIC  (brass cap)</div>
+          <div class="it-size">138 (from axis burner srew to gas entrance)</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_cd6d7620b71e4522ab98b6cbae25732d~mv2.jpg_1024" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_cd6d7620b71e4522ab98b6cbae25732d~mv2.jpg_1024')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="bpfimebs9200" data-desc="complete burner medium size for mastergrill, classic  (brass cap)">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_0fd8864bc35148a5b6c3cdd342f7b9d0~mv2.jpg/v1/fill/w_614,h_408,al_c,q_80,usm_0.66_1.00_0.01/d671d9_0fd8864bc35148a5b6c3cdd342f7b9d0~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BPFIMEBS9200</div>
+          <div class="it-desc">Complete Burner Medium Size for MASTERGRILL, CLASSIC  (brass cap)</div>
+          <div class="it-size">138 (from axis burner srew to gas entrance)</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_0fd8864bc35148a5b6c3cdd342f7b9d0~mv2.jpg/v1/fill/w_614,h_408,al_c,q_80,usm_0.66_1.00_0.01/d671d9_0fd8864bc35148a5b6c3cdd342f7b9d0~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_0fd8864bc35148a5b6c3cdd342f7b9d0~mv2.jpg/v1/fill/w_614,h_408,al_c,q_80,usm_0.66_1.00_0.01/d671d9_0fd8864bc35148a5b6c3cdd342f7b9d0~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="bpfigrbs0000" data-desc="complete burner large size for xl3  (brass cap)">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_5579722bfb3a4dceb98de6ff1ea2d0a5~mv2.jpg_1024" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BPFIGRBS0000</div>
+          <div class="it-desc">Complete Burner Large Size for XL3  (brass cap)</div>
+          <div class="it-size">130 (from axis burner srew to gas entrance)</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_5579722bfb3a4dceb98de6ff1ea2d0a5~mv2.jpg_1024" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_5579722bfb3a4dceb98de6ff1ea2d0a5~mv2.jpg_1024')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="bpfimebs0000" data-desc="complete burner medium size for xl3  (brass cap)">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_f7a074168a63475a9dc122528b5098f5~mv2.jpg/v1/fill/w_717,h_400,al_c,lg_1,q_80/d671d9_f7a074168a63475a9dc122528b5098f5~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BPFIMEBS0000</div>
+          <div class="it-desc">Complete Burner Medium Size for XL3  (brass cap)</div>
+          <div class="it-size">130 (from axis burner srew to gas entrance)</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_f7a074168a63475a9dc122528b5098f5~mv2.jpg/v1/fill/w_717,h_400,al_c,lg_1,q_80/d671d9_f7a074168a63475a9dc122528b5098f5~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_f7a074168a63475a9dc122528b5098f5~mv2.jpg/v1/fill/w_717,h_400,al_c,lg_1,q_80/d671d9_f7a074168a63475a9dc122528b5098f5~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="bpfifipibspr00" data-desc="complete burner small size for xl3  (brass cap)">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_72b25495069744f69f03b8e157c326e6~mv2.jpg/v1/fill/w_587,h_655,al_c,q_85,usm_0.66_1.00_0.01/d671d9_72b25495069744f69f03b8e157c326e6~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BPFIFIPIBSPR00</div>
+          <div class="it-desc">Complete Burner Small Size for XL3  (brass cap)</div>
+          <div class="it-size">260 (from axis burner srew to gas entrance)</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_72b25495069744f69f03b8e157c326e6~mv2.jpg/v1/fill/w_587,h_655,al_c,q_85,usm_0.66_1.00_0.01/d671d9_72b25495069744f69f03b8e157c326e6~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_72b25495069744f69f03b8e157c326e6~mv2.jpg/v1/fill/w_587,h_655,al_c,q_85,usm_0.66_1.00_0.01/d671d9_72b25495069744f69f03b8e157c326e6~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="brgrtcae85an" data-desc="large size burner complete old type def  for seafarer hobs old type and mariner old type - enamelled with 2 fixing screws">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_61b82d8eec16403d846366e6fb142e29~mv2.jpg/v1/fill/w_480,h_391,al_c,q_80,usm_0.66_1.00_0.01/d671d9_61b82d8eec16403d846366e6fb142e29~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BRGRTCAE85AN</div>
+          <div class="it-desc">Large Size Burner Complete Old Type DEF  for Seafarer Hobs Old Type and Mariner Old Type - ENAMELLED WITH 2 FIXING SCREWS</div>
+          <div class="it-size">Burner Head Diameter 99</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_61b82d8eec16403d846366e6fb142e29~mv2.jpg/v1/fill/w_480,h_391,al_c,q_80,usm_0.66_1.00_0.01/d671d9_61b82d8eec16403d846366e6fb142e29~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_61b82d8eec16403d846366e6fb142e29~mv2.jpg/v1/fill/w_480,h_391,al_c,q_80,usm_0.66_1.00_0.01/d671d9_61b82d8eec16403d846366e6fb142e29~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="brgrtcae85ai" data-desc="large size burner complete old type def  for seafarer hobs old type and mariner old type – st. steel with 2 fixing screws">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.jpg/v1/fill/w_722,h_587,al_c,q_85,usm_0.66_1.00_0.01/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BRGRTCAE85AI</div>
+          <div class="it-desc">Large Size Burner Complete Old Type DEF  for Seafarer Hobs Old Type and Mariner Old Type – ST. STEEL WITH 2 FIXING SCREWS</div>
+          <div class="it-size">Burner Head Diameter 99</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.jpg/v1/fill/w_722,h_587,al_c,q_85,usm_0.66_1.00_0.01/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.jpg/v1/fill/w_722,h_587,al_c,q_85,usm_0.66_1.00_0.01/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="brmetcae65an" data-desc="medium size  burner complete old type def  for seafarer hobs old type and mariner old type - enamelled burner cap with 2 fixing screws">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_e801985549204f6ea2baaab78745a983~mv2.jpg/v1/fill/w_480,h_390,al_c,q_80,usm_0.66_1.00_0.01/d671d9_e801985549204f6ea2baaab78745a983~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BRMETCAE65AN</div>
+          <div class="it-desc">Medium Size  Burner Complete Old Type DEF  for Seafarer Hobs Old Type and Mariner Old Type - ENAMELLED BURNER CAP WITH 2 FIXING SCREWS</div>
+          <div class="it-size">Burner Head Diameter 72</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_e801985549204f6ea2baaab78745a983~mv2.jpg/v1/fill/w_480,h_390,al_c,q_80,usm_0.66_1.00_0.01/d671d9_e801985549204f6ea2baaab78745a983~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_e801985549204f6ea2baaab78745a983~mv2.jpg/v1/fill/w_480,h_390,al_c,q_80,usm_0.66_1.00_0.01/d671d9_e801985549204f6ea2baaab78745a983~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="brmetcae65ai" data-desc="medium size  burner complete old type def  for seafarer hobs old type and mariner old type - st.steel with 2 fixing screws">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.jpg/v1/fill/w_722,h_587,al_c,q_85,usm_0.66_1.00_0.01/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BRMETCAE65AI</div>
+          <div class="it-desc">Medium Size  Burner Complete Old Type DEF  for Seafarer Hobs Old Type and Mariner Old Type - ST.STEEL WITH 2 FIXING SCREWS</div>
+          <div class="it-size">Burner Head Diameter 72</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.jpg/v1/fill/w_722,h_587,al_c,q_85,usm_0.66_1.00_0.01/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.jpg/v1/fill/w_722,h_587,al_c,q_85,usm_0.66_1.00_0.01/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="brpitcae50an" data-desc="small size  burner complete old type def  for seafarer hobs old type and mariner old type - enamelled  burner cap with 2 fixing screws">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_f24e0bf52ecd46f788e58656ca41ae1e~mv2.jpg/v1/fill/w_480,h_391,al_c,q_80,usm_0.66_1.00_0.01/d671d9_f24e0bf52ecd46f788e58656ca41ae1e~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BRPITCAE50AN</div>
+          <div class="it-desc">Small Size  Burner Complete Old Type DEF  for Seafarer Hobs Old Type and Mariner Old Type - ENAMELLED  BURNER CAP WITH 2 FIXING SCREWS</div>
+          <div class="it-size">Burner Head Diameter 52</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_f24e0bf52ecd46f788e58656ca41ae1e~mv2.jpg/v1/fill/w_480,h_391,al_c,q_80,usm_0.66_1.00_0.01/d671d9_f24e0bf52ecd46f788e58656ca41ae1e~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_f24e0bf52ecd46f788e58656ca41ae1e~mv2.jpg/v1/fill/w_480,h_391,al_c,q_80,usm_0.66_1.00_0.01/d671d9_f24e0bf52ecd46f788e58656ca41ae1e~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="brpitcae50ai" data-desc="small size  burner complete old type def  for seafarer hobs old type and mariner old type - stainless steel burner cap with 2 fixing screws">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.jpg/v1/fill/w_722,h_587,al_c,q_85,usm_0.66_1.00_0.01/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BRPITCAE50AI</div>
+          <div class="it-desc">Small Size  Burner Complete Old Type DEF  for Seafarer Hobs Old Type and Mariner Old Type - STAINLESS STEEL BURNER CAP WITH 2 FIXING SCREWS</div>
+          <div class="it-size">Burner Head Diameter 52</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.jpg/v1/fill/w_722,h_587,al_c,q_85,usm_0.66_1.00_0.01/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.jpg/v1/fill/w_722,h_587,al_c,q_85,usm_0.66_1.00_0.01/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="brsomigrasna" data-desc="large size burner complete new type somi  for seafarer hobs  mariner / top / xl new - enamelled with 1 fixing screw">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_84d61ce0a5ad494dbdb568b17785eb33~mv2.jpg/v1/fill/w_585,h_351,al_c,q_80,usm_0.66_1.00_0.01/d671d9_84d61ce0a5ad494dbdb568b17785eb33~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BRSOMIGRASNA</div>
+          <div class="it-desc">Large Size Burner Complete New Type SOMI  for Seafarer Hobs  MARINER / TOP / XL NEW - ENAMELLED WITH 1 FIXING SCREW</div>
+          <div class="it-size">Burner Head Diameter 98</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_84d61ce0a5ad494dbdb568b17785eb33~mv2.jpg/v1/fill/w_585,h_351,al_c,q_80,usm_0.66_1.00_0.01/d671d9_84d61ce0a5ad494dbdb568b17785eb33~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_84d61ce0a5ad494dbdb568b17785eb33~mv2.jpg/v1/fill/w_585,h_351,al_c,q_80,usm_0.66_1.00_0.01/d671d9_84d61ce0a5ad494dbdb568b17785eb33~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="brsomigrasia" data-desc="large size burner complete new type somi  for seafarer hobs  mariner / top / xl new – st. steel with 1 fixing screw">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_44337f456c5a42ab88bd1d90ce24c2f0~mv2_d_3968_2976_s_4_2.jpg_1024" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BRSOMIGRASIA</div>
+          <div class="it-desc">Large Size Burner Complete New Type SOMI  for Seafarer Hobs  MARINER / TOP / XL NEW – ST. STEEL WITH 1 FIXING SCREW</div>
+          <div class="it-size">Burner Head Diameter 98</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_44337f456c5a42ab88bd1d90ce24c2f0~mv2_d_3968_2976_s_4_2.jpg_1024" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_44337f456c5a42ab88bd1d90ce24c2f0~mv2_d_3968_2976_s_4_2.jpg_1024')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="brsomimeasna" data-desc="medium size burner complete new type somi  for seafarer hobs  mariner / top / xl new - enamelled with 1 fixing screw">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_4b21c6a0b37e45abad312954d9f89140~mv2.jpg/v1/fill/w_480,h_494,al_c,lg_1,q_80/d671d9_4b21c6a0b37e45abad312954d9f89140~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BRSOMIMEASNA</div>
+          <div class="it-desc">Medium Size Burner Complete New Type SOMI  for Seafarer Hobs  MARINER / TOP / XL NEW - ENAMELLED WITH 1 FIXING SCREW</div>
+          <div class="it-size">Burner Head Diameter 72</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_4b21c6a0b37e45abad312954d9f89140~mv2.jpg/v1/fill/w_480,h_494,al_c,lg_1,q_80/d671d9_4b21c6a0b37e45abad312954d9f89140~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_4b21c6a0b37e45abad312954d9f89140~mv2.jpg/v1/fill/w_480,h_494,al_c,lg_1,q_80/d671d9_4b21c6a0b37e45abad312954d9f89140~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="brsomimeasia" data-desc="medium size burner complete new type somi  for seafarer hobs  mariner / top / xl new – st.steel with 1 fixing screw">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_2ad9ae38d3fd42629398135549d46627~mv2_d_3968_2976_s_4_2.jpg_850" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BRSOMIMEASIA</div>
+          <div class="it-desc">Medium Size Burner Complete New Type SOMI  for Seafarer Hobs  MARINER / TOP / XL NEW – ST.STEEL WITH 1 FIXING SCREW</div>
+          <div class="it-size">Burner Head Diameter 72</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_2ad9ae38d3fd42629398135549d46627~mv2_d_3968_2976_s_4_2.jpg_850" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_2ad9ae38d3fd42629398135549d46627~mv2_d_3968_2976_s_4_2.jpg_850')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="brsomipiasna" data-desc="small size burner complete new type somi  for seafarer hobs  mariner / top / xl new - enamelled with 1 fixing screw">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_3a3c547f536643929cc2b099689be8a2~mv2.jpg/v1/fill/w_560,h_559,al_c,lg_1,q_80/d671d9_3a3c547f536643929cc2b099689be8a2~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BRSOMIPIASNA</div>
+          <div class="it-desc">Small Size Burner Complete New Type SOMI  for Seafarer Hobs  MARINER / TOP / XL NEW - ENAMELLED WITH 1 FIXING SCREW</div>
+          <div class="it-size">Burner Head Diameter 52</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_3a3c547f536643929cc2b099689be8a2~mv2.jpg/v1/fill/w_560,h_559,al_c,lg_1,q_80/d671d9_3a3c547f536643929cc2b099689be8a2~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_3a3c547f536643929cc2b099689be8a2~mv2.jpg/v1/fill/w_560,h_559,al_c,lg_1,q_80/d671d9_3a3c547f536643929cc2b099689be8a2~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="brsomipiasia" data-desc="small size burner complete new type somi  for seafarer hobs  mariner / top / xl new - enamelled with 1 fixing screw">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_f0d437447001485da90335b45a5bfad0~mv2_d_3968_2976_s_4_2.jpg_850" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BRSOMIPIASIA</div>
+          <div class="it-desc">Small Size Burner Complete New Type SOMI  for Seafarer Hobs  MARINER / TOP / XL NEW - ENAMELLED WITH 1 FIXING SCREW</div>
+          <div class="it-size">Burner Head Diameter 52</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_f0d437447001485da90335b45a5bfad0~mv2_d_3968_2976_s_4_2.jpg_850" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_f0d437447001485da90335b45a5bfad0~mv2_d_3968_2976_s_4_2.jpg_850')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="copspimbd2nf" data-desc="burner cap for burner old type with 2 screws def - small enamelled">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_f24e0bf52ecd46f788e58656ca41ae1e~mv2.jpg/v1/fill/w_480,h_391,al_c,q_80,usm_0.66_1.00_0.01/d671d9_f24e0bf52ecd46f788e58656ca41ae1e~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">COPSPIMBD2NF</div>
+          <div class="it-desc">BURNER CAP for burner old type with 2 screws DEF - SMALL ENAMELLED</div>
+          <div class="it-size">DIAMETER 52</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_f24e0bf52ecd46f788e58656ca41ae1e~mv2.jpg/v1/fill/w_480,h_391,al_c,q_80,usm_0.66_1.00_0.01/d671d9_f24e0bf52ecd46f788e58656ca41ae1e~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_f24e0bf52ecd46f788e58656ca41ae1e~mv2.jpg/v1/fill/w_480,h_391,al_c,q_80,usm_0.66_1.00_0.01/d671d9_f24e0bf52ecd46f788e58656ca41ae1e~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="copspimbd2if" data-desc="burner cap for burner old type with 2 screws def - small stainless steel">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.jpg/v1/fill/w_722,h_587,al_c,q_85,usm_0.66_1.00_0.01/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">COPSPIMBD2IF</div>
+          <div class="it-desc">BURNER CAP for burner old type with 2 screws DEF - SMALL STAINLESS STEEL</div>
+          <div class="it-size">DIAMETER 52</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.jpg/v1/fill/w_722,h_587,al_c,q_85,usm_0.66_1.00_0.01/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.jpg/v1/fill/w_722,h_587,al_c,q_85,usm_0.66_1.00_0.01/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="copsmembd2nf" data-desc="burner cap for burner old type with 2 screws def - medium enamelled">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_e801985549204f6ea2baaab78745a983~mv2.jpg/v1/fill/w_480,h_390,al_c,q_80,usm_0.66_1.00_0.01/d671d9_e801985549204f6ea2baaab78745a983~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">COPSMEMBD2NF</div>
+          <div class="it-desc">BURNER CAP for burner old type with 2 screws DEF - MEDIUM ENAMELLED</div>
+          <div class="it-size">DIAMTER 72</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_e801985549204f6ea2baaab78745a983~mv2.jpg/v1/fill/w_480,h_390,al_c,q_80,usm_0.66_1.00_0.01/d671d9_e801985549204f6ea2baaab78745a983~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_e801985549204f6ea2baaab78745a983~mv2.jpg/v1/fill/w_480,h_390,al_c,q_80,usm_0.66_1.00_0.01/d671d9_e801985549204f6ea2baaab78745a983~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="copsmembd2if" data-desc="burner cap for burner old type with 2 screws def - medium stainless steel">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.jpg/v1/fill/w_722,h_587,al_c,q_85,usm_0.66_1.00_0.01/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">COPSMEMBD2IF</div>
+          <div class="it-desc">BURNER CAP for burner old type with 2 screws DEF - MEDIUM STAINLESS STEEL</div>
+          <div class="it-size">DIAMTER 72</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.jpg/v1/fill/w_722,h_587,al_c,q_85,usm_0.66_1.00_0.01/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.jpg/v1/fill/w_722,h_587,al_c,q_85,usm_0.66_1.00_0.01/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="copsgrmbd2nf" data-desc="burner cap for burner old type with 2 screws def - large enamelled">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_61b82d8eec16403d846366e6fb142e29~mv2.jpg/v1/fill/w_480,h_391,al_c,q_80,usm_0.66_1.00_0.01/d671d9_61b82d8eec16403d846366e6fb142e29~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">COPSGRMBD2NF</div>
+          <div class="it-desc">BURNER CAP for burner old type with 2 screws DEF - LARGE ENAMELLED</div>
+          <div class="it-size">DIAMETER 99</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_61b82d8eec16403d846366e6fb142e29~mv2.jpg/v1/fill/w_480,h_391,al_c,q_80,usm_0.66_1.00_0.01/d671d9_61b82d8eec16403d846366e6fb142e29~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_61b82d8eec16403d846366e6fb142e29~mv2.jpg/v1/fill/w_480,h_391,al_c,q_80,usm_0.66_1.00_0.01/d671d9_61b82d8eec16403d846366e6fb142e29~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="copsgrmbd2if" data-desc="burner cap for burner old type with 2 screws def - large stainless steel">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.jpg/v1/fill/w_722,h_587,al_c,q_85,usm_0.66_1.00_0.01/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">COPSGRMBD2IF</div>
+          <div class="it-desc">BURNER CAP for burner old type with 2 screws DEF - LARGE STAINLESS STEEL</div>
+          <div class="it-size">DIAMETER 99</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.jpg/v1/fill/w_722,h_587,al_c,q_85,usm_0.66_1.00_0.01/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.jpg/v1/fill/w_722,h_587,al_c,q_85,usm_0.66_1.00_0.01/d671d9_dabe31f575b24be9b0b4d897cb6e93d8~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="brsomipspicf" data-desc="burner cap for burner new type with 1 screw somi - small enamelled">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_3a3c547f536643929cc2b099689be8a2~mv2.jpg/v1/fill/w_560,h_559,al_c,lg_1,q_80/d671d9_3a3c547f536643929cc2b099689be8a2~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BRSOMIPSPICF</div>
+          <div class="it-desc">BURNER CAP for burner new type with 1 screw SOMI - SMALL ENAMELLED</div>
+          <div class="it-size">DIAMETER 52</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_3a3c547f536643929cc2b099689be8a2~mv2.jpg/v1/fill/w_560,h_559,al_c,lg_1,q_80/d671d9_3a3c547f536643929cc2b099689be8a2~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_3a3c547f536643929cc2b099689be8a2~mv2.jpg/v1/fill/w_560,h_559,al_c,lg_1,q_80/d671d9_3a3c547f536643929cc2b099689be8a2~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="brsomipipicf" data-desc="burner cap for burner new type with 1 screw somi - small stainless steel">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_f0d437447001485da90335b45a5bfad0~mv2_d_3968_2976_s_4_2.jpg_850" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BRSOMIPIPICF</div>
+          <div class="it-desc">BURNER CAP for burner new type with 1 screw SOMI - SMALL STAINLESS STEEL</div>
+          <div class="it-size">DIAMETER 52</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_f0d437447001485da90335b45a5bfad0~mv2_d_3968_2976_s_4_2.jpg_850" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_f0d437447001485da90335b45a5bfad0~mv2_d_3968_2976_s_4_2.jpg_850')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="brsomipsmecf" data-desc="burner cap for burner old type with 1 screw somi - medium enamelled">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_4b21c6a0b37e45abad312954d9f89140~mv2.jpg_850" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BRSOMIPSMECF</div>
+          <div class="it-desc">BURNER CAP for burner old type with 1 screw SOMI - MEDIUM ENAMELLED</div>
+          <div class="it-size">DIAMTER 72</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_4b21c6a0b37e45abad312954d9f89140~mv2.jpg_850" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_4b21c6a0b37e45abad312954d9f89140~mv2.jpg_850')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="brsomipimecf" data-desc="burner cap for burner old type with 1 screw somi - medium stainless steel">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_2ad9ae38d3fd42629398135549d46627~mv2_d_3968_2976_s_4_2.jpg_850" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BRSOMIPIMECF</div>
+          <div class="it-desc">BURNER CAP for burner old type with 1 screw SOMI - MEDIUM STAINLESS STEEL</div>
+          <div class="it-size">DIAMTER 72</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_2ad9ae38d3fd42629398135549d46627~mv2_d_3968_2976_s_4_2.jpg_850" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_2ad9ae38d3fd42629398135549d46627~mv2_d_3968_2976_s_4_2.jpg_850')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="brsomipsgrcf" data-desc="burner cap for burner new type with 1 screw somi - large enamelled">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_84d61ce0a5ad494dbdb568b17785eb33~mv2.jpg/v1/fill/w_585,h_351,al_c,q_80,usm_0.66_1.00_0.01/d671d9_84d61ce0a5ad494dbdb568b17785eb33~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BRSOMIPSGRCF</div>
+          <div class="it-desc">BURNER CAP for burner new type with 1 screw SOMI - LARGE ENAMELLED</div>
+          <div class="it-size">DIAMETER 99</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_84d61ce0a5ad494dbdb568b17785eb33~mv2.jpg/v1/fill/w_585,h_351,al_c,q_80,usm_0.66_1.00_0.01/d671d9_84d61ce0a5ad494dbdb568b17785eb33~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_84d61ce0a5ad494dbdb568b17785eb33~mv2.jpg/v1/fill/w_585,h_351,al_c,q_80,usm_0.66_1.00_0.01/d671d9_84d61ce0a5ad494dbdb568b17785eb33~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="brsomipigrcf" data-desc="burner cap for burner new type with 1 screw somi - large stainless steel">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_44337f456c5a42ab88bd1d90ce24c2f0~mv2_d_3968_2976_s_4_2.jpg_1024" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BRSOMIPIGRCF</div>
+          <div class="it-desc">BURNER CAP for burner new type with 1 screw SOMI - LARGE STAINLESS STEEL</div>
+          <div class="it-size">DIAMETER 99</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_44337f456c5a42ab88bd1d90ce24c2f0~mv2_d_3968_2976_s_4_2.jpg_1024" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_44337f456c5a42ab88bd1d90ce24c2f0~mv2_d_3968_2976_s_4_2.jpg_1024')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="vma203457688" data-desc="screw for new and old burners somi and def for mariner, top, xlnew">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_6b7fd2172b30415ab0cd0c736ed8839d~mv2_d_3968_2976_s_4_2.jpg_850" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">VMA203457688</div>
+          <div class="it-desc">Screw for new and old burners SOMI and DEF for MARINER, TOP, XLNEW</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_6b7fd2172b30415ab0cd0c736ed8839d~mv2_d_3968_2976_s_4_2.jpg_850" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_6b7fd2172b30415ab0cd0c736ed8839d~mv2_d_3968_2976_s_4_2.jpg_850')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="vma204507688" data-desc="screw stainless steel for large, medium, small brass burners for xl, classic, mastergrill">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_1871031124d84bbaaa197d1a5485a963~mv2.jpg_850" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">VMA204507688</div>
+          <div class="it-desc">Screw Stainless Steel for large, medium, small BRASS burners for XL, CLASSIC, MASTERGRILL</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_1871031124d84bbaaa197d1a5485a963~mv2.jpg_850" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_1871031124d84bbaaa197d1a5485a963~mv2.jpg_850')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="cat-section" data-category="Thermocouples">
+    <div class="cat-head">
+      <span class="cat-num">II</span>
+      <h2 class="cat-title">Thermocouples</h2>
+      <span class="cat-count">5 items</span>
+    </div>
+    <div class="cat-grid">
+      <article class="item-card has-photo" data-ref="tcor450c" data-desc="thermocouple for 1 hob burner (complete with special adaptor nut) for cookers xl, classic, mastergrill">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_1ee1bd25db92444fa8f12507ec898198~mv2.jpg/v1/fill/w_574,h_500,al_c,lg_1,q_80/d671d9_1ee1bd25db92444fa8f12507ec898198~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">TCOR450C</div>
+          <div class="it-desc">Thermocouple for 1 HOB BURNER (complete with special adaptor nut) for cookers XL, CLASSIC, MASTERGRILL</div>
+          <div class="it-size">450 (brass part with sensor 40)</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_1ee1bd25db92444fa8f12507ec898198~mv2.jpg/v1/fill/w_574,h_500,al_c,lg_1,q_80/d671d9_1ee1bd25db92444fa8f12507ec898198~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_1ee1bd25db92444fa8f12507ec898198~mv2.jpg/v1/fill/w_574,h_500,al_c,lg_1,q_80/d671d9_1ee1bd25db92444fa8f12507ec898198~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="tcor495mbd2" data-desc="thermocouple for old type def burner (seafarer, mariner, top)">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_cdc405aa4f5d41aabd37e4a1d820ef39~mv2_d_3968_2976_s_4_2.jpg_1024" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">TCOR495MBD2</div>
+          <div class="it-desc">Thermocouple for old type DEF burner (SEAFARER, MARINER, TOP)</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_cdc405aa4f5d41aabd37e4a1d820ef39~mv2_d_3968_2976_s_4_2.jpg_1024" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_cdc405aa4f5d41aabd37e4a1d820ef39~mv2_d_3968_2976_s_4_2.jpg_1024')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="brsomitcop60" data-desc="thermocouple for new type somi burner (seafarer, mariner, top)">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_4ceb7ad61240475eb967636ac54c72f4.jpg_400" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BRSOMITCOP60</div>
+          <div class="it-desc">Thermocouple for new type SOMI burner (SEAFARER, MARINER, TOP)</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_4ceb7ad61240475eb967636ac54c72f4.jpg_400" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_4ceb7ad61240475eb967636ac54c72f4.jpg_400')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="tcor900c" data-desc="thermocouple for oven burner for cookers xl and mariner (old type) and for cookers classic, mastergrill new type">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_cfb7fc286908496895ae1ba064b2772c~mv2.jpg/v1/fill/w_575,h_500,al_c,lg_1,q_80/d671d9_cfb7fc286908496895ae1ba064b2772c~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">TCOR900C</div>
+          <div class="it-desc">Thermocouple for Oven Burner for cookers XL and MARINER (old type) and for cookers CLASSIC, MASTERGRILL new type</div>
+          <div class="it-size">1020 (brass part with sensor 57)</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_cfb7fc286908496895ae1ba064b2772c~mv2.jpg/v1/fill/w_575,h_500,al_c,lg_1,q_80/d671d9_cfb7fc286908496895ae1ba064b2772c~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_cfb7fc286908496895ae1ba064b2772c~mv2.jpg/v1/fill/w_575,h_500,al_c,lg_1,q_80/d671d9_cfb7fc286908496895ae1ba064b2772c~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="termocold" data-desc="thermocouple for old type mariner, xl cookers">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_7c910d13c34a483399575d2a3aced02b~mv2.jpg/v1/fill/w_575,h_500,al_c,lg_1,q_80/d671d9_7c910d13c34a483399575d2a3aced02b~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">TERMOCOLD</div>
+          <div class="it-desc">Thermocouple for old type MARINER, XL cookers</div>
+          <div class="it-size">900 (brass part with sensor 42)</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_7c910d13c34a483399575d2a3aced02b~mv2.jpg/v1/fill/w_575,h_500,al_c,lg_1,q_80/d671d9_7c910d13c34a483399575d2a3aced02b~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_7c910d13c34a483399575d2a3aced02b~mv2.jpg/v1/fill/w_575,h_500,al_c,lg_1,q_80/d671d9_7c910d13c34a483399575d2a3aced02b~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="cat-section" data-category="Ignition cables and electronic ignition parts">
+    <div class="cat-head">
+      <span class="cat-num">III</span>
+      <h2 class="cat-title">Ignition & Electronics</h2>
+      <span class="cat-count">6 items</span>
+    </div>
+    <div class="cat-grid">
+      <article class="item-card has-photo" data-ref="candelambd2" data-desc="ignition cable for old type def burner (seafarer, mariner, top)">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_fbf7a0c2594b4f71a1ee0baa6a3d136c~mv2_d_3968_2976_s_4_2.jpg_850" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">CANDELAMBD2</div>
+          <div class="it-desc">Ignition cable for old type DEF burner (SEAFARER, MARINER, TOP)</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_fbf7a0c2594b4f71a1ee0baa6a3d136c~mv2_d_3968_2976_s_4_2.jpg_850" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_fbf7a0c2594b4f71a1ee0baa6a3d136c~mv2_d_3968_2976_s_4_2.jpg_850')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="brsomicand60" data-desc="ignition cable for new type somi burner (seafarer, mariner, top)">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_e89893b9c3864521bcd461149d310be0~mv2_d_2976_3968_s_4_2.jpg_1024" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BRSOMICAND60</div>
+          <div class="it-desc">Ignition cable for new type SOMI burner (SEAFARER, MARINER, TOP)</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_e89893b9c3864521bcd461149d310be0~mv2_d_2976_3968_s_4_2.jpg_1024" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_e89893b9c3864521bcd461149d310be0~mv2_d_2976_3968_s_4_2.jpg_1024')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="pulsante1cuc" data-desc="ignition switch (new model can be adapted to all cookers with electronic ignition)">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_b5716ee102d3488cac85b5a4272ac45c~mv2.jpg_650" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">PULSANTE1CUC</div>
+          <div class="it-desc">Ignition Switch (New Model can be adapted to all Cookers with electronic ignition)</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_b5716ee102d3488cac85b5a4272ac45c~mv2.jpg_650" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_b5716ee102d3488cac85b5a4272ac45c~mv2.jpg_650')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="pulsante0cuc" data-desc="rubber cover for electronic ignirion for old type mariner and top cookers">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_e38d9a36bf2f4c24bd1b7763644327c6~mv2.jpg_850" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">PULSANTE0CUC</div>
+          <div class="it-desc">Rubber Cover for Electronic Ignirion for Old Type Mariner and Top Cookers</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_e38d9a36bf2f4c24bd1b7763644327c6~mv2.jpg_850" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_e38d9a36bf2f4c24bd1b7763644327c6~mv2.jpg_850')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="scatelettr4f" data-desc="electronic box for ignition mariner2">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_d572a3e0435e4a0e84ecaeb93abb1e03~mv2_d_3968_2976_s_4_2.jpg_1024" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">SCATELETTR4F</div>
+          <div class="it-desc">Electronic box for ignition MARINER2</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_d572a3e0435e4a0e84ecaeb93abb1e03~mv2_d_3968_2976_s_4_2.jpg_1024" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_d572a3e0435e4a0e84ecaeb93abb1e03~mv2_d_3968_2976_s_4_2.jpg_1024')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="scatelettr6f" data-desc="electronic box for ignition mariner3">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_5b7e020070c240cbaca7133d568d8ca2~mv2_d_3968_2976_s_4_2.jpg_1024" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">SCATELETTR6F</div>
+          <div class="it-desc">Electronic box for ignition MARINER3</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_5b7e020070c240cbaca7133d568d8ca2~mv2_d_3968_2976_s_4_2.jpg_1024" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_5b7e020070c240cbaca7133d568d8ca2~mv2_d_3968_2976_s_4_2.jpg_1024')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="cat-section" data-category="Gas valves and gas valve parts">
+    <div class="cat-head">
+      <span class="cat-num">IV</span>
+      <h2 class="cat-title">Gas Valves</h2>
+      <span class="cat-count">6 items</span>
+    </div>
+    <div class="cat-grid">
+      <article class="item-card has-photo" data-ref="rup….20804" data-desc="gas valves for hob burners for xl, classic, mastergrill (please specify for which burner and which model of cooker when ordering)">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_2ced6a7e58924fc084eb6882e79c7a15~mv2_d_2976_3968_s_4_2.jpg/v1/fill/w_710,h_947,al_c,q_85,usm_0.66_1.00_0.01/d671d9_2ced6a7e58924fc084eb6882e79c7a15~mv2_d_2976_3968_s_4_2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">RUP….20804</div>
+          <div class="it-desc">Gas Valves for Hob Burners for XL, CLASSIC, MASTERGRILL (please specify for which burner and which model of cooker when ordering)</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_2ced6a7e58924fc084eb6882e79c7a15~mv2_d_2976_3968_s_4_2.jpg/v1/fill/w_710,h_947,al_c,q_85,usm_0.66_1.00_0.01/d671d9_2ced6a7e58924fc084eb6882e79c7a15~mv2_d_2976_3968_s_4_2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_2ced6a7e58924fc084eb6882e79c7a15~mv2_d_2976_3968_s_4_2.jpg/v1/fill/w_710,h_947,al_c,q_85,usm_0.66_1.00_0.01/d671d9_2ced6a7e58924fc084eb6882e79c7a15~mv2_d_2976_3968_s_4_2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="rup….20820" data-desc="gas valves for oven and grill burners for classic, mastergrill, xl (please specify for which burner and which model of cooker when ordering)">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_cf9fc5c95a034119ba9469588fc7ddb5~mv2_d_2976_3968_s_4_2.jpg/v1/fill/w_702,h_936,al_c,q_85,usm_0.66_1.00_0.01/d671d9_cf9fc5c95a034119ba9469588fc7ddb5~mv2_d_2976_3968_s_4_2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">RUP….20820</div>
+          <div class="it-desc">Gas Valves for Oven and Grill Burners for CLASSIC, MASTERGRILL, XL (please specify for which burner and which model of cooker when ordering)</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_cf9fc5c95a034119ba9469588fc7ddb5~mv2_d_2976_3968_s_4_2.jpg/v1/fill/w_702,h_936,al_c,q_85,usm_0.66_1.00_0.01/d671d9_cf9fc5c95a034119ba9469588fc7ddb5~mv2_d_2976_3968_s_4_2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_cf9fc5c95a034119ba9469588fc7ddb5~mv2_d_2976_3968_s_4_2.jpg/v1/fill/w_702,h_936,al_c,q_85,usm_0.66_1.00_0.01/d671d9_cf9fc5c95a034119ba9469588fc7ddb5~mv2_d_2976_3968_s_4_2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="rup….20876" data-desc="gas valves for hob burners for mariner top new xl  (please specify for which burner and which model of cooker when ordering)">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_cf9fc5c95a034119ba9469588fc7ddb5~mv2_d_2976_3968_s_4_2.jpg/v1/fill/w_702,h_936,al_c,q_85,usm_0.66_1.00_0.01/d671d9_cf9fc5c95a034119ba9469588fc7ddb5~mv2_d_2976_3968_s_4_2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">RUP….20876</div>
+          <div class="it-desc">Gas Valves for Hob Burners for MARINER TOP NEW XL  (please specify for which burner and which model of cooker when ordering)</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_cf9fc5c95a034119ba9469588fc7ddb5~mv2_d_2976_3968_s_4_2.jpg/v1/fill/w_702,h_936,al_c,q_85,usm_0.66_1.00_0.01/d671d9_cf9fc5c95a034119ba9469588fc7ddb5~mv2_d_2976_3968_s_4_2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_cf9fc5c95a034119ba9469588fc7ddb5~mv2_d_2976_3968_s_4_2.jpg/v1/fill/w_702,h_936,al_c,q_85,usm_0.66_1.00_0.01/d671d9_cf9fc5c95a034119ba9469588fc7ddb5~mv2_d_2976_3968_s_4_2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="ruterv6037fg" data-desc="thermostat for mariner / top with grill">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_3fb7c67602a54a51824922baa88ac048.jpg_850" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">RUTERV6037FG</div>
+          <div class="it-desc">Thermostat for MARINER / TOP with grill</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_3fb7c67602a54a51824922baa88ac048.jpg_850" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_3fb7c67602a54a51824922baa88ac048.jpg_850')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="micromagnete" data-desc="micromagnet (inside each valve - please specify for which burner and which model of cooker when ordering)">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_0fb0da3ef10943968344038843645efe~mv2.jpg_650" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">MICROMAGNETE</div>
+          <div class="it-desc">MICROMAGNET (inside each valve - please specify for which burner and which model of cooker when ordering)</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_0fb0da3ef10943968344038843645efe~mv2.jpg_650" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_0fb0da3ef10943968344038843645efe~mv2.jpg_650')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="ugmm60.." data-desc="gas jet (please specify for which burner and which model of cooker when ordering)">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_0c9d78ce3c2245e7a17d08e30298a7e5~mv2.jpg_650" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">UGMM60..</div>
+          <div class="it-desc">Gas Jet (please specify for which burner and which model of cooker when ordering)</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_0c9d78ce3c2245e7a17d08e30298a7e5~mv2.jpg_650" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_0c9d78ce3c2245e7a17d08e30298a7e5~mv2.jpg_650')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="cat-section" data-category="Grids">
+    <div class="cat-head">
+      <span class="cat-num">V</span>
+      <h2 class="cat-title">Grids</h2>
+      <span class="cat-count">8 items</span>
+    </div>
+    <div class="cat-grid">
+      <article class="item-card has-photo" data-ref="cgs92ggff2mc" data-desc="oven grid for cookers mastergrill / classic">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_0e65490cea7c45a29f27014ec8503b45~mv2_d_1260_1891_s_2.jpg/v1/fill/w_708,h_1063,al_c,q_85,usm_0.66_1.00_0.01/d671d9_0e65490cea7c45a29f27014ec8503b45~mv2_d_1260_1891_s_2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">CGS92GGFF2MC</div>
+          <div class="it-desc">Oven Grid for cookers Mastergrill / Classic</div>
+          <div class="it-size">397 x 301</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_0e65490cea7c45a29f27014ec8503b45~mv2_d_1260_1891_s_2.jpg/v1/fill/w_708,h_1063,al_c,q_85,usm_0.66_1.00_0.01/d671d9_0e65490cea7c45a29f27014ec8503b45~mv2_d_1260_1891_s_2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_0e65490cea7c45a29f27014ec8503b45~mv2_d_1260_1891_s_2.jpg/v1/fill/w_708,h_1063,al_c,q_85,usm_0.66_1.00_0.01/d671d9_0e65490cea7c45a29f27014ec8503b45~mv2_d_1260_1891_s_2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="cgl0gpfb000c" data-desc="hob&#x27;s grid for mastergrill, classic">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_d5d4e494870e42a19a9ef765a91d81eb~mv2_d_1575_2520_s_2.jpg/v1/fill/w_607,h_972,al_c,q_85,usm_0.66_1.00_0.01/d671d9_d5d4e494870e42a19a9ef765a91d81eb~mv2_d_1575_2520_s_2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">CGL0GPFB000C</div>
+          <div class="it-desc">Hob&#x27;s grid for MASTERGRILL, CLASSIC</div>
+          <div class="it-size">440 x 286</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_d5d4e494870e42a19a9ef765a91d81eb~mv2_d_1575_2520_s_2.jpg/v1/fill/w_607,h_972,al_c,q_85,usm_0.66_1.00_0.01/d671d9_d5d4e494870e42a19a9ef765a91d81eb~mv2_d_1575_2520_s_2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_d5d4e494870e42a19a9ef765a91d81eb~mv2_d_1575_2520_s_2.jpg/v1/fill/w_607,h_972,al_c,q_85,usm_0.66_1.00_0.01/d671d9_d5d4e494870e42a19a9ef765a91d81eb~mv2_d_1575_2520_s_2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="cgs0gpf0000c" data-desc="hob grid for cookers model xl2 and xl3">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_737088dc7da944c6a619c2348abedca1~mv2.jpg/v1/fill/w_591,h_1116,al_c,q_85,usm_0.66_1.00_0.01/d671d9_737088dc7da944c6a619c2348abedca1~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">CGS0GPF0000C</div>
+          <div class="it-desc">Hob Grid for Cookers Model XL2 and XL3</div>
+          <div class="it-size">459 x 330</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_737088dc7da944c6a619c2348abedca1~mv2.jpg/v1/fill/w_591,h_1116,al_c,q_85,usm_0.66_1.00_0.01/d671d9_737088dc7da944c6a619c2348abedca1~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_737088dc7da944c6a619c2348abedca1~mv2.jpg/v1/fill/w_591,h_1116,al_c,q_85,usm_0.66_1.00_0.01/d671d9_737088dc7da944c6a619c2348abedca1~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="cgs2gpfaseac" data-desc="hob grid for cooker model mariner2">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_1b87aea550614b91b20a998717b566f6~mv2.jpg_850" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">CGS2GPFASEAC</div>
+          <div class="it-desc">Hob Grid for Cooker Model MARINER2</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_1b87aea550614b91b20a998717b566f6~mv2.jpg_850" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_1b87aea550614b91b20a998717b566f6~mv2.jpg_850')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="cgs3gpfaseac" data-desc="hob grid for cooker model mariner3">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_e5fd76a3e9974e3b82baeb4e47e0f58e~mv2.jpg/v1/fill/w_717,h_538,al_c,q_85,usm_0.66_1.00_0.01/d671d9_e5fd76a3e9974e3b82baeb4e47e0f58e~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">CGS3GPFASEAC</div>
+          <div class="it-desc">Hob Grid for Cooker Model MARINER3</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_e5fd76a3e9974e3b82baeb4e47e0f58e~mv2.jpg/v1/fill/w_717,h_538,al_c,q_85,usm_0.66_1.00_0.01/d671d9_e5fd76a3e9974e3b82baeb4e47e0f58e~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_e5fd76a3e9974e3b82baeb4e47e0f58e~mv2.jpg/v1/fill/w_717,h_538,al_c,q_85,usm_0.66_1.00_0.01/d671d9_e5fd76a3e9974e3b82baeb4e47e0f58e~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="cgs0gff0000c" data-desc="oven grid xl and mariner cookers">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_3e812ea4809a40e8b8033095a8cbeb84~mv2.jpg/v1/fill/w_646,h_1091,al_c,q_85,usm_0.66_1.00_0.01/d671d9_3e812ea4809a40e8b8033095a8cbeb84~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">CGS0GFF0000C</div>
+          <div class="it-desc">Oven Grid XL and MARINER cookers</div>
+          <div class="it-size">430 x 340</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_3e812ea4809a40e8b8033095a8cbeb84~mv2.jpg/v1/fill/w_646,h_1091,al_c,q_85,usm_0.66_1.00_0.01/d671d9_3e812ea4809a40e8b8033095a8cbeb84~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_3e812ea4809a40e8b8033095a8cbeb84~mv2.jpg/v1/fill/w_646,h_1091,al_c,q_85,usm_0.66_1.00_0.01/d671d9_3e812ea4809a40e8b8033095a8cbeb84~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="pgs2grf0seac" data-desc="hob&#x27;s grid for built in hob seafarer2">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_197620332d8a466aa789bc8feb3c151e~mv2.jpg/v1/fill/w_742,h_530,al_c,q_85,usm_0.66_1.00_0.01/d671d9_197620332d8a466aa789bc8feb3c151e~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">PGS2GRF0SEAC</div>
+          <div class="it-desc">Hob&#x27;s Grid for Built in Hob Seafarer2</div>
+          <div class="it-size">436 x 280</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_197620332d8a466aa789bc8feb3c151e~mv2.jpg/v1/fill/w_742,h_530,al_c,q_85,usm_0.66_1.00_0.01/d671d9_197620332d8a466aa789bc8feb3c151e~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_197620332d8a466aa789bc8feb3c151e~mv2.jpg/v1/fill/w_742,h_530,al_c,q_85,usm_0.66_1.00_0.01/d671d9_197620332d8a466aa789bc8feb3c151e~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="pgs3grf0seac" data-desc="hob&#x27;s grid for built in hob seafarer3">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_e4cbce4f6a0f4abba7f82b1010bed0ad~mv2_d_1276_1276_s_2.jpg/v1/fill/w_716,h_716,al_c,q_85,usm_0.66_1.00_0.01/d671d9_e4cbce4f6a0f4abba7f82b1010bed0ad~mv2_d_1276_1276_s_2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">PGS3GRF0SEAC</div>
+          <div class="it-desc">Hob&#x27;s grid for Built in Hob Seafarer3</div>
+          <div class="it-size">436 x 337</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_e4cbce4f6a0f4abba7f82b1010bed0ad~mv2_d_1276_1276_s_2.jpg/v1/fill/w_716,h_716,al_c,q_85,usm_0.66_1.00_0.01/d671d9_e4cbce4f6a0f4abba7f82b1010bed0ad~mv2_d_1276_1276_s_2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_e4cbce4f6a0f4abba7f82b1010bed0ad~mv2_d_1276_1276_s_2.jpg/v1/fill/w_716,h_716,al_c,q_85,usm_0.66_1.00_0.01/d671d9_e4cbce4f6a0f4abba7f82b1010bed0ad~mv2_d_1276_1276_s_2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="cat-section" data-category="Oven and grill trays">
+    <div class="cat-head">
+      <span class="cat-num">VI</span>
+      <h2 class="cat-title">Oven & Grill Trays</h2>
+      <span class="cat-count">3 items</span>
+    </div>
+    <div class="cat-grid">
+      <article class="item-card has-photo" data-ref="cgs0ras00sne" data-desc="enamelled oven tray for xl, mariner">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_f2c60b8e99ab4d78b154a097a81eb6cd~mv2.jpg/v1/fill/w_706,h_531,al_c,q_85,usm_0.66_1.00_0.01/d671d9_f2c60b8e99ab4d78b154a097a81eb6cd~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">CGS0RAS00SNE</div>
+          <div class="it-desc">Enamelled Oven Tray for XL, MARINER</div>
+          <div class="it-size">430 x 278</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_f2c60b8e99ab4d78b154a097a81eb6cd~mv2.jpg/v1/fill/w_706,h_531,al_c,q_85,usm_0.66_1.00_0.01/d671d9_f2c60b8e99ab4d78b154a097a81eb6cd~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_f2c60b8e99ab4d78b154a097a81eb6cd~mv2.jpg/v1/fill/w_706,h_531,al_c,q_85,usm_0.66_1.00_0.01/d671d9_f2c60b8e99ab4d78b154a097a81eb6cd~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="cglras00sne" data-desc="enamelled oven tray for classic, mastergrill">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_531894f33fa344488e7eecde0452ec4b~mv2.jpg/v1/fill/w_717,h_487,al_c,q_80,usm_0.66_1.00_0.01/d671d9_531894f33fa344488e7eecde0452ec4b~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">CGLRAS00SNE</div>
+          <div class="it-desc">Enamelled Oven Tray for CLASSIC, MASTERGRILL</div>
+          <div class="it-size">396 x 261</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_531894f33fa344488e7eecde0452ec4b~mv2.jpg/v1/fill/w_717,h_487,al_c,q_80,usm_0.66_1.00_0.01/d671d9_531894f33fa344488e7eecde0452ec4b~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_531894f33fa344488e7eecde0452ec4b~mv2.jpg/v1/fill/w_717,h_487,al_c,q_80,usm_0.66_1.00_0.01/d671d9_531894f33fa344488e7eecde0452ec4b~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="fln2rafs0sne+fln2grfntc00+fln0maf00c00" data-desc="enamelled grill tray trivet + plastic handle  for mastergrill and skipper">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_33ef26739ddb41519872c7e89681ab6b~mv2_d_2976_3968_s_4_2.jpg_1024" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">FLN2RAFS0SNE+FLN2GRFNTC00+FLN0MAF00C00</div>
+          <div class="it-desc">Enamelled Grill Tray Trivet + Plastic Handle  for MASTERGRILL and SKIPPER</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_33ef26739ddb41519872c7e89681ab6b~mv2_d_2976_3968_s_4_2.jpg_1024" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_33ef26739ddb41519872c7e89681ab6b~mv2_d_2976_3968_s_4_2.jpg_1024')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="cat-section" data-category="Door window parts">
+    <div class="cat-head">
+      <span class="cat-num">VII</span>
+      <h2 class="cat-title">Door & Window Parts</h2>
+      <span class="cat-count">12 items</span>
+    </div>
+    <div class="cat-grid">
+      <article class="item-card has-photo" data-ref="vesn030" data-desc="outer glass for door window for models classic and mastergrill">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_34903a219568486894b6ee48ceacb3b4~mv2_d_2834_2643_s_4_2.jpg/v1/fill/w_699,h_660,al_c,q_85,usm_0.66_1.00_0.01/d671d9_34903a219568486894b6ee48ceacb3b4~mv2_d_2834_2643_s_4_2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">VESN030</div>
+          <div class="it-desc">Outer Glass for Door Window for models CLASSIC and MASTERGRILL</div>
+          <div class="it-size">413 x 268</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_34903a219568486894b6ee48ceacb3b4~mv2_d_2834_2643_s_4_2.jpg/v1/fill/w_699,h_660,al_c,q_85,usm_0.66_1.00_0.01/d671d9_34903a219568486894b6ee48ceacb3b4~mv2_d_2834_2643_s_4_2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_34903a219568486894b6ee48ceacb3b4~mv2_d_2834_2643_s_4_2.jpg/v1/fill/w_699,h_660,al_c,q_85,usm_0.66_1.00_0.01/d671d9_34903a219568486894b6ee48ceacb3b4~mv2_d_2834_2643_s_4_2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="vespecfori92" data-desc="outer glass for door mirror window for cookers models top, mariner, xxl">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_f7710779439b474885fc1454fe95eef4~mv2_d_1325_1324_s_2.jpg/v1/fill/w_600,h_600,al_c,q_80,usm_0.66_1.00_0.01/d671d9_f7710779439b474885fc1454fe95eef4~mv2_d_1325_1324_s_2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">VESPECFORI92</div>
+          <div class="it-desc">Outer Glass for Door Mirror Window for Cookers models TOP, MARINER, XXL</div>
+          <div class="it-size">412 x 268</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_f7710779439b474885fc1454fe95eef4~mv2_d_1325_1324_s_2.jpg/v1/fill/w_600,h_600,al_c,q_80,usm_0.66_1.00_0.01/d671d9_f7710779439b474885fc1454fe95eef4~mv2_d_1325_1324_s_2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_f7710779439b474885fc1454fe95eef4~mv2_d_1325_1324_s_2.jpg/v1/fill/w_600,h_600,al_c,q_80,usm_0.66_1.00_0.01/d671d9_f7710779439b474885fc1454fe95eef4~mv2_d_1325_1324_s_2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="vesn031" data-desc="outer glass for door window for models xl2 and xl3">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_16cbd0d68fb34f489c77752c6ada596d~mv2.jpg/v1/fill/w_654,h_491,al_c,q_80,usm_0.66_1.00_0.01/d671d9_16cbd0d68fb34f489c77752c6ada596d~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">VESN031</div>
+          <div class="it-desc">Outer Glass for Door Window for models XL2 and XL3</div>
+          <div class="it-size">459 x 280</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_16cbd0d68fb34f489c77752c6ada596d~mv2.jpg/v1/fill/w_654,h_491,al_c,q_80,usm_0.66_1.00_0.01/d671d9_16cbd0d68fb34f489c77752c6ada596d~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_16cbd0d68fb34f489c77752c6ada596d~mv2.jpg/v1/fill/w_654,h_491,al_c,q_80,usm_0.66_1.00_0.01/d671d9_16cbd0d68fb34f489c77752c6ada596d~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="vec0011" data-desc="inner door glass">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_9dc6345429f9484ba1f11dfed5d65eb8~mv2_d_3968_2976_s_4_2.jpg_1024" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">VEC0011</div>
+          <div class="it-desc">Inner door glass</div>
+          <div class="it-size">365 x 200</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_9dc6345429f9484ba1f11dfed5d65eb8~mv2_d_3968_2976_s_4_2.jpg_1024" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_9dc6345429f9484ba1f11dfed5d65eb8~mv2_d_3968_2976_s_4_2.jpg_1024')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="c 959 s" data-desc="door sealing for cookers model classic mastergrill">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_189c42286ef94e44b7b9c70954de428c~mv2_d_3968_2976_s_4_2.jpg_1024" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">C 959 S</div>
+          <div class="it-desc">Door Sealing for Cookers model CLASSIC MASTERGRILL</div>
+          <div class="it-size">730.0</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_189c42286ef94e44b7b9c70954de428c~mv2_d_3968_2976_s_4_2.jpg_1024" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_189c42286ef94e44b7b9c70954de428c~mv2_d_3968_2976_s_4_2.jpg_1024')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="guelasil60n" data-desc="door seal for mariner, top, xl">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_c82d2b9c6a8f457f8ca41836fdbe7fc1~mv2.jpg/v1/fill/w_600,h_353,al_c,q_80,usm_0.66_1.00_0.01/d671d9_c82d2b9c6a8f457f8ca41836fdbe7fc1~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">GUELASIL60N</div>
+          <div class="it-desc">DOOR SEAL for MARINER, TOP, XL</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_c82d2b9c6a8f457f8ca41836fdbe7fc1~mv2.jpg/v1/fill/w_600,h_353,al_c,q_80,usm_0.66_1.00_0.01/d671d9_c82d2b9c6a8f457f8ca41836fdbe7fc1~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_c82d2b9c6a8f457f8ca41836fdbe7fc1~mv2.jpg/v1/fill/w_600,h_353,al_c,q_80,usm_0.66_1.00_0.01/d671d9_c82d2b9c6a8f457f8ca41836fdbe7fc1~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="tec011p" data-desc="door thermometer for all cookers xl, mariner, mastergrill, classic">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_55ace8c29cc2433e91b1a04bb25a0b56~mv2_d_2834_2643_s_4_2.jpg_650" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">TEC011P</div>
+          <div class="it-desc">Door Thermometer for all cookers XL, MARINER, MASTERGRILL, CLASSIC</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_55ace8c29cc2433e91b1a04bb25a0b56~mv2_d_2834_2643_s_4_2.jpg_650" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_55ace8c29cc2433e91b1a04bb25a0b56~mv2_d_2834_2643_s_4_2.jpg_650')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="pomanews920s" data-desc="st. steel door handle for cooker mastergrill with mirror door">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_f7710779439b474885fc1454fe95eef4~mv2_d_1325_1324_s_2.jpg_1024" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">POMANEWS920S</div>
+          <div class="it-desc">St. Steel Door Handle for Cooker Mastergrill with Mirror Door</div>
+          <div class="it-size">406.0</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_f7710779439b474885fc1454fe95eef4~mv2_d_1325_1324_s_2.jpg_1024" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_f7710779439b474885fc1454fe95eef4~mv2_d_1325_1324_s_2.jpg_1024')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="pomasrf0000c" data-desc="door handle for classic, mastergrill">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_31e52a6e57f0438490522e800e4df534~mv2.jpg/v1/fill/w_656,h_612,al_c,q_85,usm_0.66_1.00_0.01/d671d9_31e52a6e57f0438490522e800e4df534~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">POMASRF0000C</div>
+          <div class="it-desc">Door Handle for CLASSIC, MASTERGRILL</div>
+          <div class="it-size">406.0</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_31e52a6e57f0438490522e800e4df534~mv2.jpg/v1/fill/w_656,h_612,al_c,q_85,usm_0.66_1.00_0.01/d671d9_31e52a6e57f0438490522e800e4df534~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_31e52a6e57f0438490522e800e4df534~mv2.jpg/v1/fill/w_656,h_612,al_c,q_85,usm_0.66_1.00_0.01/d671d9_31e52a6e57f0438490522e800e4df534~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="pomacsf0000c" data-desc="door handle for xl cookers">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_47f145f67c2f4a3ebf27e960d016b06f~mv2.jpg/v1/fill/w_652,h_489,al_c,q_80,usm_0.66_1.00_0.01/d671d9_47f145f67c2f4a3ebf27e960d016b06f~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">POMACSF0000C</div>
+          <div class="it-desc">Door Handle for XL cookers</div>
+          <div class="it-size">458.0</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_47f145f67c2f4a3ebf27e960d016b06f~mv2.jpg/v1/fill/w_652,h_489,al_c,q_80,usm_0.66_1.00_0.01/d671d9_47f145f67c2f4a3ebf27e960d016b06f~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_47f145f67c2f4a3ebf27e960d016b06f~mv2.jpg/v1/fill/w_652,h_489,al_c,q_80,usm_0.66_1.00_0.01/d671d9_47f145f67c2f4a3ebf27e960d016b06f~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="cgs0mocm5shp" data-desc="door lock for all cookers with oven">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_b1c482f21f444a99bb44aea0fe4ae109.jpg/v1/fill/w_289,h_500,al_c,q_80,usm_0.66_1.00_0.01/d671d9_b1c482f21f444a99bb44aea0fe4ae109.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">CGS0MOCM5SHP</div>
+          <div class="it-desc">Door Lock for all cookers with oven</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_b1c482f21f444a99bb44aea0fe4ae109.jpg/v1/fill/w_289,h_500,al_c,q_80,usm_0.66_1.00_0.01/d671d9_b1c482f21f444a99bb44aea0fe4ae109.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_b1c482f21f444a99bb44aea0fe4ae109.jpg/v1/fill/w_289,h_500,al_c,q_80,usm_0.66_1.00_0.01/d671d9_b1c482f21f444a99bb44aea0fe4ae109.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card" data-ref="moam011" data-desc="door spring">
+        <div class="ph-ind no-ph" aria-hidden="true"><span>—</span></div>
+        <div class="it-content">
+          <div class="it-ref">MOAM011</div>
+          <div class="it-desc">door spring</div>
+          
+          <div class="card-actions">
+            <span class="no-img-note">Image not available</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="cat-section" data-category="Panholders">
+    <div class="cat-head">
+      <span class="cat-num">VIII</span>
+      <h2 class="cat-title">Panholders</h2>
+      <span class="cat-count">7 items</span>
+    </div>
+    <div class="cat-grid">
+      <article class="item-card has-photo" data-ref="kitfili9200" data-desc="panholders kit for cookers mastergrill and mariner3 3 burners">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_62831e30e0bb473781d6596f070922de~mv2_d_1575_2520_s_2.jpg/v1/fill/w_629,h_1007,al_c,q_85,usm_0.66_1.00_0.01/d671d9_62831e30e0bb473781d6596f070922de~mv2_d_1575_2520_s_2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">KITFILI9200</div>
+          <div class="it-desc">Panholders kit for Cookers MASTERGRILL and MARINER3 3 BURNERS</div>
+          <div class="it-size">140 (From front metal part to Pot Axis)</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_62831e30e0bb473781d6596f070922de~mv2_d_1575_2520_s_2.jpg/v1/fill/w_629,h_1007,al_c,q_85,usm_0.66_1.00_0.01/d671d9_62831e30e0bb473781d6596f070922de~mv2_d_1575_2520_s_2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_62831e30e0bb473781d6596f070922de~mv2_d_1575_2520_s_2.jpg/v1/fill/w_629,h_1007,al_c,q_85,usm_0.66_1.00_0.01/d671d9_62831e30e0bb473781d6596f070922de~mv2_d_1575_2520_s_2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="kitfilinew20" data-desc="panholders kit for cookers mariner2 (2 burners model)">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_563b10e4e4b44720bf017fd731a95cf8~mv2.jpg/v1/fill/w_573,h_894,al_c,q_85,usm_0.66_1.00_0.01/d671d9_563b10e4e4b44720bf017fd731a95cf8~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">KITFILINEW20</div>
+          <div class="it-desc">Panholders kit for Cookers MARINER2 (2 BURNERS MODEL)</div>
+          <div class="it-size">195 (From front metal part to Pot Axis)</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_563b10e4e4b44720bf017fd731a95cf8~mv2.jpg/v1/fill/w_573,h_894,al_c,q_85,usm_0.66_1.00_0.01/d671d9_563b10e4e4b44720bf017fd731a95cf8~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_563b10e4e4b44720bf017fd731a95cf8~mv2.jpg/v1/fill/w_573,h_894,al_c,q_85,usm_0.66_1.00_0.01/d671d9_563b10e4e4b44720bf017fd731a95cf8~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="kitfilixl20" data-desc="panholders kit for cookers xl2">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_f084488b62894f7195f3eeb08e598329~mv2.jpg/v1/fill/w_703,h_1013,al_c,q_85,usm_0.66_1.00_0.01/d671d9_f084488b62894f7195f3eeb08e598329~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">KITFILIXL20</div>
+          <div class="it-desc">Panholders kit for Cookers XL2</div>
+          <div class="it-size">176 (From front metal part to Pot Axis)</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_f084488b62894f7195f3eeb08e598329~mv2.jpg/v1/fill/w_703,h_1013,al_c,q_85,usm_0.66_1.00_0.01/d671d9_f084488b62894f7195f3eeb08e598329~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_f084488b62894f7195f3eeb08e598329~mv2.jpg/v1/fill/w_703,h_1013,al_c,q_85,usm_0.66_1.00_0.01/d671d9_f084488b62894f7195f3eeb08e598329~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="kitfilixl30" data-desc="panholders kit for cookers xl3">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_1af9d0daf9714df1b3ff8dab735fce78~mv2.jpg/v1/fill/w_647,h_919,al_c,q_85,usm_0.66_1.00_0.01/d671d9_1af9d0daf9714df1b3ff8dab735fce78~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">KITFILIXL30</div>
+          <div class="it-desc">Panholders kit for Cookers XL3</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_1af9d0daf9714df1b3ff8dab735fce78~mv2.jpg/v1/fill/w_647,h_919,al_c,q_85,usm_0.66_1.00_0.01/d671d9_1af9d0daf9714df1b3ff8dab735fce78~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_1af9d0daf9714df1b3ff8dab735fce78~mv2.jpg/v1/fill/w_647,h_919,al_c,q_85,usm_0.66_1.00_0.01/d671d9_1af9d0daf9714df1b3ff8dab735fce78~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="pgl3setastsl" data-desc="panholders kit for seafarer 3 complete with heat shields">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_75592594983f47ecb704001f3a73de09~mv2.jpg_650" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">PGL3SETASTSL</div>
+          <div class="it-desc">Panholders kit for Seafarer 3 complete with heat shields</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_75592594983f47ecb704001f3a73de09~mv2.jpg_650" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_75592594983f47ecb704001f3a73de09~mv2.jpg_650')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="pgl2setastsl" data-desc="panholders kit for seafarer 2 complete with heat shields">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_44f2bccb39684ab0b976da6c49e658c4~mv2.jpg_650" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">PGL2SETASTSL</div>
+          <div class="it-desc">Panholders kit for Seafarer 2 complete with heat shields</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_44f2bccb39684ab0b976da6c49e658c4~mv2.jpg_650" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_44f2bccb39684ab0b976da6c49e658c4~mv2.jpg_650')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="vopp0515022z" data-desc="knob for panholders">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_15d1dc98c5704b71b4f2388c298c3e02~mv2_d_2976_3968_s_4_2.jpg_1024" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">VOPP0515022Z</div>
+          <div class="it-desc">Knob for panholders</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_15d1dc98c5704b71b4f2388c298c3e02~mv2_d_2976_3968_s_4_2.jpg_1024" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_15d1dc98c5704b71b4f2388c298c3e02~mv2_d_2976_3968_s_4_2.jpg_1024')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="cat-section" data-category="Control knobs">
+    <div class="cat-head">
+      <span class="cat-num">IX</span>
+      <h2 class="cat-title">Control Knobs</h2>
+      <span class="cat-count">3 items</span>
+    </div>
+    <div class="cat-grid">
+      <article class="item-card has-photo" data-ref="ppma3513n0pn" data-desc="control knob (plastic black) for classic, mastergrill, xl">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_56594512c3d34180bb839b6768875ff5~mv2.jpg/v1/fill/w_746,h_783,al_c,q_85,usm_0.66_1.00_0.01/d671d9_56594512c3d34180bb839b6768875ff5~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">PPMA3513N0PN</div>
+          <div class="it-desc">Control Knob (plastic black) for CLASSIC, MASTERGRILL, XL</div>
+          <div class="it-size">Diameter 34</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_56594512c3d34180bb839b6768875ff5~mv2.jpg/v1/fill/w_746,h_783,al_c,q_85,usm_0.66_1.00_0.01/d671d9_56594512c3d34180bb839b6768875ff5~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_56594512c3d34180bb839b6768875ff5~mv2.jpg/v1/fill/w_746,h_783,al_c,q_85,usm_0.66_1.00_0.01/d671d9_56594512c3d34180bb839b6768875ff5~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="manter3020cr" data-desc="control knob (plastic chromed) for mariner">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_f7cf35642c3849b49b2020f54b5dce82~mv2.jpg/v1/fill/w_690,h_518,al_c,q_80,usm_0.66_1.00_0.01/d671d9_f7cf35642c3849b49b2020f54b5dce82~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">MANTER3020CR</div>
+          <div class="it-desc">Control Knob (plastic chromed) for MARINER</div>
+          <div class="it-size">Diameter 30</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_f7cf35642c3849b49b2020f54b5dce82~mv2.jpg/v1/fill/w_690,h_518,al_c,q_80,usm_0.66_1.00_0.01/d671d9_f7cf35642c3849b49b2020f54b5dce82~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_f7cf35642c3849b49b2020f54b5dce82~mv2.jpg/v1/fill/w_690,h_518,al_c,q_80,usm_0.66_1.00_0.01/d671d9_f7cf35642c3849b49b2020f54b5dce82~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="manter3020cr" data-desc="control knob mariner xlnew seafarerblack">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_18eaf329233e45fcb9ae704460c98e92~mv2_d_2976_3968_s_4_2.jpg_1024" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">MANTER3020CR</div>
+          <div class="it-desc">Control knob MARINER XLNEW SEAFARERblack</div>
+          <div class="it-size">Diameter 30</div>
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_18eaf329233e45fcb9ae704460c98e92~mv2_d_2976_3968_s_4_2.jpg_1024" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_18eaf329233e45fcb9ae704460c98e92~mv2_d_2976_3968_s_4_2.jpg_1024')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="cat-section" data-category="Hob heat shields">
+    <div class="cat-head">
+      <span class="cat-num">X</span>
+      <h2 class="cat-title">Hob Heat Shields</h2>
+      <span class="cat-count">3 items</span>
+    </div>
+    <div class="cat-grid">
+      <article class="item-card has-photo" data-ref="cgs0setpvxl2" data-desc="kit heat shields for hob xl mariner cookers">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_0eef4a5fcc2f491db1388b435192fc43.png/v1/fill/w_422,h_416,al_c,q_80,usm_0.66_1.00_0.01/d671d9_0eef4a5fcc2f491db1388b435192fc43.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">CGS0SETPVXL2</div>
+          <div class="it-desc">Kit heat shields for hob XL MARINER COOKERS</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_0eef4a5fcc2f491db1388b435192fc43.png/v1/fill/w_422,h_416,al_c,q_80,usm_0.66_1.00_0.01/d671d9_0eef4a5fcc2f491db1388b435192fc43.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_0eef4a5fcc2f491db1388b435192fc43.png/v1/fill/w_422,h_416,al_c,q_80,usm_0.66_1.00_0.01/d671d9_0eef4a5fcc2f491db1388b435192fc43.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="kitparav9200" data-desc="kit heat shields for hob classic mastergrill">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_c913ad1e45284cacbcec3c0df3de4ac4~mv2_d_4896_3672_s_4_2.png/v1/fill/w_691,h_518,al_c,q_90,usm_0.66_1.00_0.01/d671d9_c913ad1e45284cacbcec3c0df3de4ac4~mv2_d_4896_3672_s_4_2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">KITPARAV9200</div>
+          <div class="it-desc">Kit heat shields for hob CLASSIC MASTERGRILL</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_c913ad1e45284cacbcec3c0df3de4ac4~mv2_d_4896_3672_s_4_2.png/v1/fill/w_691,h_518,al_c,q_90,usm_0.66_1.00_0.01/d671d9_c913ad1e45284cacbcec3c0df3de4ac4~mv2_d_4896_3672_s_4_2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_c913ad1e45284cacbcec3c0df3de4ac4~mv2_d_4896_3672_s_4_2.png/v1/fill/w_691,h_518,al_c,q_90,usm_0.66_1.00_0.01/d671d9_c913ad1e45284cacbcec3c0df3de4ac4~mv2_d_4896_3672_s_4_2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="cgs0setpv0sl" data-desc="kit heat shields for hob mariner – 3 pieces – 2 sides + 1 rear">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_e08653611e724aff94216e4f85a4efad~mv2_d_4896_3672_s_4_2.png/v1/fill/w_439,h_356,al_c,q_80,usm_0.66_1.00_0.01/d671d9_e08653611e724aff94216e4f85a4efad~mv2_d_4896_3672_s_4_2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">CGS0SETPV0SL</div>
+          <div class="it-desc">Kit heat shields for hob MARINER – 3 PIECES – 2 SIDES + 1 REAR</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_e08653611e724aff94216e4f85a4efad~mv2_d_4896_3672_s_4_2.png/v1/fill/w_439,h_356,al_c,q_80,usm_0.66_1.00_0.01/d671d9_e08653611e724aff94216e4f85a4efad~mv2_d_4896_3672_s_4_2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_e08653611e724aff94216e4f85a4efad~mv2_d_4896_3672_s_4_2.png/v1/fill/w_439,h_356,al_c,q_80,usm_0.66_1.00_0.01/d671d9_e08653611e724aff94216e4f85a4efad~mv2_d_4896_3672_s_4_2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="cat-section" data-category="Other parts">
+    <div class="cat-head">
+      <span class="cat-num">XI</span>
+      <h2 class="cat-title">Other Parts</h2>
+      <span class="cat-count">4 items</span>
+    </div>
+    <div class="cat-grid">
+      <article class="item-card has-photo" data-ref="cglrpc3v0000" data-desc="stainless steel hob for cooker mastergrill">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_1e0646ecf83146d2a3288a9e9076c9a0~mv2_d_2834_2643_s_4_2.jpg_650" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">CGLRPC3V0000</div>
+          <div class="it-desc">Stainless Steel Hob for Cooker Mastergrill</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_1e0646ecf83146d2a3288a9e9076c9a0~mv2_d_2834_2643_s_4_2.jpg_650" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_1e0646ecf83146d2a3288a9e9076c9a0~mv2_d_2834_2643_s_4_2.jpg_650')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="kitchiaviste" data-desc="complete gimbals lock (made of three parts) for all cookers">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_67697af0f94548e89ee9c9ecb948595f~mv2.jpg/v1/fill/w_667,h_1001,al_c,q_85,usm_0.66_1.00_0.01/d671d9_67697af0f94548e89ee9c9ecb948595f~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">KITCHIAVISTE</div>
+          <div class="it-desc">Complete Gimbals Lock (made of three parts) for all cookers</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_67697af0f94548e89ee9c9ecb948595f~mv2.jpg/v1/fill/w_667,h_1001,al_c,q_85,usm_0.66_1.00_0.01/d671d9_67697af0f94548e89ee9c9ecb948595f~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_67697af0f94548e89ee9c9ecb948595f~mv2.jpg/v1/fill/w_667,h_1001,al_c,q_85,usm_0.66_1.00_0.01/d671d9_67697af0f94548e89ee9c9ecb948595f~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="bafics400000" data-desc="complete gimbals supports - 2 pieces - for cookers">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_9623df7dca204fdda498b35645e37437~mv2.jpg_850" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">BAFICS400000</div>
+          <div class="it-desc">Complete Gimbals Supports - 2 pieces - For cookers</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_9623df7dca204fdda498b35645e37437~mv2.jpg_850" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_9623df7dca204fdda498b35645e37437~mv2.jpg_850')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+      <article class="item-card has-photo" data-ref="piol07626000" data-desc="teflon grid support for seafarer hobs">
+        <a class="ph-ind" href="https://static.wixstatic.com/media/d671d9_a443e67f2d4a4f9b898a45a05803abc0~mv2.jpg/v1/fill/w_706,h_1103,al_c,q_85,usm_0.66_1.00_0.01/d671d9_a443e67f2d4a4f9b898a45a05803abc0~mv2.webp" target="_blank" rel="noopener" aria-label="View image"><span>VIEW</span></a>
+        <div class="it-content">
+          <div class="it-ref">PIOL07626000</div>
+          <div class="it-desc">Teflon grid support for SEAFARER HOBS</div>
+          
+          <div class="card-actions">
+            <a class="ph-link" href="https://static.wixstatic.com/media/d671d9_a443e67f2d4a4f9b898a45a05803abc0~mv2.jpg/v1/fill/w_706,h_1103,al_c,q_85,usm_0.66_1.00_0.01/d671d9_a443e67f2d4a4f9b898a45a05803abc0~mv2.webp" target="_blank" rel="noopener">View Image</a>
+            <button class="cp-btn" onclick="copyLink(this, 'https://static.wixstatic.com/media/d671d9_a443e67f2d4a4f9b898a45a05803abc0~mv2.jpg/v1/fill/w_706,h_1103,al_c,q_85,usm_0.66_1.00_0.01/d671d9_a443e67f2d4a4f9b898a45a05803abc0~mv2.webp')" aria-label="Copy image link">Copy Link</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <div class="empty-state hidden" id="empty-state">No parts match your search.</div>
+</main>
+
+<footer class="foot">
+  <div class="foot-grid">
+    <div>
+      <div class="foot-brand">Marine Cookers <em>—</em> Techimpex</div>
+      <div class="foot-addr">
+        Via Cosmo, 14 · 31015 Conegliano (TV) · Italia<br>
+        <a href="mailto:info@marinecookers.com">info@marinecookers.com</a> · <a href="tel:+390438184023">+39 0438 1840230</a>
+      </div>
+    </div>
+    <div class="foot-since">
+      <span class="yr">1974</span>
+      <span class="lbl">Crafting marine cookers</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast">Link copied</div>
+
+<script>
+// Custom cursor (desktop only)
+(function(){
+  if(!window.matchMedia('(hover:hover) and (pointer:fine)').matches) return;
+  const c = document.getElementById('pg-cursor');
+  if(!c) return;
+  let tx=0,ty=0,cx=0,cy=0;
+  window.addEventListener('mousemove', e => { tx=e.clientX; ty=e.clientY; }, {passive:true});
+  function loop(){
+    cx += (tx-cx)*0.18;
+    cy += (ty-cy)*0.18;
+    c.style.transform = `translate(${cx}px, ${cy}px) translate(-50%,-50%)`;
+    requestAnimationFrame(loop);
+  }
+  loop();
+  document.addEventListener('mouseover', e => {
+    if(e.target.closest('a,button,input,.item-card,.fl-btn')) c.classList.add('hov');
+  });
+  document.addEventListener('mouseout', e => {
+    if(e.target.closest('a,button,input,.item-card,.fl-btn')) c.classList.remove('hov');
+  });
+})();
+
+// Copy link with elegant toast
+function copyLink(btn, url) {
+  if(!navigator.clipboard){ 
+    const ta=document.createElement('textarea'); ta.value=url; document.body.appendChild(ta); ta.select(); 
+    try{document.execCommand('copy');}catch(e){} document.body.removeChild(ta);
+    showToast(btn); return;
+  }
+  navigator.clipboard.writeText(url).then(() => showToast(btn));
+}
+function showToast(btn){
+  const t = document.getElementById('toast');
+  if(t){ t.classList.add('show'); setTimeout(()=>t.classList.remove('show'), 1800); }
+  if(btn){
+    const orig = btn.textContent;
+    btn.textContent = 'Copied';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = orig; btn.classList.remove('copied'); }, 1800);
+  }
+}
+
+// Filters
+function setActive(btn) {
+  document.querySelectorAll('.fl-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+}
+function filterAll(btn) {
+  setActive(btn);
+  document.querySelectorAll('.item-card, .cat-section').forEach(e => e.classList.remove('hidden'));
+  checkEmpty();
+  const sb = document.querySelector('.search-wrap input'); if(sb) sb.value = '';
+}
+function filterPhoto(btn) {
+  setActive(btn);
+  document.querySelectorAll('.cat-section').forEach(e => e.classList.remove('hidden'));
+  document.querySelectorAll('.item-card').forEach(c => c.classList.toggle('hidden', !c.classList.contains('has-photo')));
+  hideEmptyCategories();
+  checkEmpty();
+}
+function filterCategory(btn, cat) {
+  setActive(btn);
+  document.querySelectorAll('.item-card').forEach(c => c.classList.remove('hidden'));
+  document.querySelectorAll('.cat-section').forEach(s => s.classList.toggle('hidden', s.dataset.category.trim() !== cat.trim()));
+  checkEmpty();
+}
+function filterSearch(q) {
+  q = q.toLowerCase().trim();
+  document.querySelectorAll('.cat-section').forEach(s => s.classList.remove('hidden'));
+  if(!q){ 
+    document.querySelectorAll('.item-card').forEach(c => c.classList.remove('hidden'));
+    document.querySelectorAll('.fl-btn').forEach(b => b.classList.remove('active'));
+    document.querySelector('.fl-btn[data-fl="all"]').classList.add('active');
+    checkEmpty();
+    return;
+  }
+  setActive(null);
+  document.querySelectorAll('.item-card').forEach(c => {
+    const match = c.dataset.ref.toLowerCase().includes(q) || c.dataset.desc.toLowerCase().includes(q);
+    c.classList.toggle('hidden', !match);
+  });
+  hideEmptyCategories();
+  checkEmpty();
+}
+function hideEmptyCategories(){
+  document.querySelectorAll('.cat-section').forEach(s => {
+    const visibleItems = s.querySelectorAll('.item-card:not(.hidden)').length;
+    s.classList.toggle('hidden', visibleItems === 0);
+  });
+}
+function checkEmpty(){
+  const visibleCats = document.querySelectorAll('.cat-section:not(.hidden)').length;
+  const es = document.getElementById('empty-state');
+  if(es) es.classList.toggle('hidden', visibleCats > 0);
+}
+</script>
+
+</body>
+</html>
